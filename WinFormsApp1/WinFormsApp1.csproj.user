@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="form\Course\AddCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\User\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\User\checkUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\Course\EditCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\Main\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\Main\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\Main\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\Course\removeCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\User\UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\User\UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
