@@ -46,7 +46,7 @@ namespace WinFormsApp1.form
             // selectCourseLabel
             // 
             this.selectCourseLabel.AutoSize = true;
-            this.selectCourseLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.selectCourseLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.selectCourseLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.selectCourseLabel.Location = new System.Drawing.Point(54, 27);
             this.selectCourseLabel.Name = "selectCourseLabel";
@@ -57,7 +57,7 @@ namespace WinFormsApp1.form
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label.Location = new System.Drawing.Point(54, 72);
             this.label.Name = "label";
@@ -68,7 +68,7 @@ namespace WinFormsApp1.form
             // periodLabel
             // 
             this.periodLabel.AutoSize = true;
-            this.periodLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.periodLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.periodLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.periodLabel.Location = new System.Drawing.Point(54, 121);
             this.periodLabel.Name = "periodLabel";
@@ -79,7 +79,7 @@ namespace WinFormsApp1.form
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.descriptionLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.descriptionLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.descriptionLabel.Location = new System.Drawing.Point(57, 165);
             this.descriptionLabel.Name = "descriptionLabel";
@@ -107,7 +107,7 @@ namespace WinFormsApp1.form
             // editCourseButton
             // 
             this.editCourseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.editCourseButton.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.editCourseButton.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.editCourseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.editCourseButton.Location = new System.Drawing.Point(57, 245);
             this.editCourseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -139,7 +139,7 @@ namespace WinFormsApp1.form
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(276, 121);
             this.label1.Name = "label1";
@@ -150,9 +150,19 @@ namespace WinFormsApp1.form
             // periodNumb
             // 
             this.periodNumb.Location = new System.Drawing.Point(203, 121);
+            this.periodNumb.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.periodNumb.Name = "periodNumb";
             this.periodNumb.Size = new System.Drawing.Size(51, 29);
             this.periodNumb.TabIndex = 3;
+            this.periodNumb.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // EditCourse
             // 
@@ -171,7 +181,7 @@ namespace WinFormsApp1.form
             this.Controls.Add(this.periodLabel);
             this.Controls.Add(this.label);
             this.Controls.Add(this.selectCourseLabel);
-            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Name = "EditCourse";
             this.Text = "Edit Course";
             this.Load += new System.EventHandler(this.EditCourse_Load);
