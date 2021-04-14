@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "84EZgRM5PekidkD85/W7Tlsn+UAmOuScQNL7CjWbAeNYnd5nQjo+774DkuVfEzb3gtbiANrXvrIy+Z0A6paREg==",
+  "dgSpecHash": "FlPBZpe9QXbLeyr3/HxHrTNCcU5Z10c1Gt2J2nIbAJQXMa+7tUuWTj3edftoLitkLk9SQ9GdPoV3h9E2t9FZcQ==",
   "success": true,
-  "projectFilePath": "H:\\winform\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "D:\\resposi\\concuachetngac\\winform\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\84398\\.nuget\\packages\\chartdirector.net\\6.4.0\\chartdirector.net.6.4.0.nupkg.sha512",
-    "C:\\Users\\84398\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\84398\\.nuget\\packages\\microsoft.office.interop.word\\15.0.4797.1003\\microsoft.office.interop.word.15.0.4797.1003.nupkg.sha512",
-    "C:\\Users\\84398\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512"
+    "C:\\Users\\dell\\.nuget\\packages\\chartdirector.net\\6.4.0\\chartdirector.net.6.4.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.office.interop.word\\15.0.4797.1003\\microsoft.office.interop.word.15.0.4797.1003.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512"
   ],
   "logs": []
 }

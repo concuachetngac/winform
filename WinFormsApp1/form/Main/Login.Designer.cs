@@ -50,9 +50,10 @@ namespace WindowsFormsApp2
             this.userNameLab.AutoSize = true;
             this.userNameLab.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.userNameLab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userNameLab.Location = new System.Drawing.Point(45, 125);
+            this.userNameLab.Location = new System.Drawing.Point(60, 154);
+            this.userNameLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userNameLab.Name = "userNameLab";
-            this.userNameLab.Size = new System.Drawing.Size(103, 28);
+            this.userNameLab.Size = new System.Drawing.Size(132, 35);
             this.userNameLab.TabIndex = 0;
             this.userNameLab.Text = "Username:";
             this.userNameLab.Click += new System.EventHandler(this.label1_Click);
@@ -62,9 +63,10 @@ namespace WindowsFormsApp2
             this.passwordLab.AutoSize = true;
             this.passwordLab.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.passwordLab.ForeColor = System.Drawing.SystemColors.Control;
-            this.passwordLab.Location = new System.Drawing.Point(45, 171);
+            this.passwordLab.Location = new System.Drawing.Point(60, 210);
+            this.passwordLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordLab.Name = "passwordLab";
-            this.passwordLab.Size = new System.Drawing.Size(97, 28);
+            this.passwordLab.Size = new System.Drawing.Size(125, 35);
             this.passwordLab.TabIndex = 0;
             this.passwordLab.Text = "Password:";
             this.passwordLab.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -72,20 +74,22 @@ namespace WindowsFormsApp2
             // 
             // textBoxUser
             // 
-            this.textBoxUser.Location = new System.Drawing.Point(211, 132);
+            this.textBoxUser.Location = new System.Drawing.Point(281, 162);
+            this.textBoxUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(164, 20);
+            this.textBoxUser.Size = new System.Drawing.Size(217, 22);
             this.textBoxUser.TabIndex = 1;
             this.toolTip1.SetToolTip(this.textBoxUser, "Input Username");
             this.textBoxUser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBoxPass
             // 
-            this.textBoxPass.Location = new System.Drawing.Point(211, 178);
+            this.textBoxPass.Location = new System.Drawing.Point(281, 219);
+            this.textBoxPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.PasswordChar = '*';
             this.textBoxPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBoxPass.Size = new System.Drawing.Size(164, 20);
+            this.textBoxPass.Size = new System.Drawing.Size(217, 22);
             this.textBoxPass.TabIndex = 2;
             this.toolTip1.SetToolTip(this.textBoxPass, "Input Password");
             this.textBoxPass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -95,11 +99,12 @@ namespace WindowsFormsApp2
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(45, 221);
+            this.button1.Location = new System.Drawing.Point(60, 272);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 32);
+            this.button1.Size = new System.Drawing.Size(213, 39);
             this.button1.TabIndex = 4;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
@@ -111,11 +116,12 @@ namespace WindowsFormsApp2
             this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.loginButton.FlatAppearance.BorderSize = 0;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.loginButton.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.loginButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.loginButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.loginButton.Location = new System.Drawing.Point(211, 221);
+            this.loginButton.Location = new System.Drawing.Point(281, 272);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(164, 32);
+            this.loginButton.Size = new System.Drawing.Size(219, 39);
             this.loginButton.TabIndex = 3;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -126,18 +132,20 @@ namespace WindowsFormsApp2
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 273);
+            this.label1.Location = new System.Drawing.Point(13, 336);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 21);
+            this.label1.Size = new System.Drawing.Size(82, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "Register";
             this.label1.Click += new System.EventHandler(this.register_Click_1);
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(211, 269);
+            this.progressBar1.Location = new System.Drawing.Point(281, 331);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(164, 20);
+            this.progressBar1.Size = new System.Drawing.Size(219, 25);
             this.progressBar1.TabIndex = 5;
             this.progressBar1.Value = 100;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
@@ -153,19 +161,20 @@ namespace WindowsFormsApp2
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WinFormsApp1.Properties.Resources.picture;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(330, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(440, 113);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(409, 299);
+            this.ClientSize = new System.Drawing.Size(545, 368);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
@@ -175,6 +184,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.passwordLab);
             this.Controls.Add(this.userNameLab);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
