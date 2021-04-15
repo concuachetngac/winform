@@ -30,9 +30,6 @@ D:\resposi\concuachetngac\winform\WinFormsApp1\bin\Debug\net472\netchartdir.dll
 D:\resposi\concuachetngac\winform\WinFormsApp1\bin\Debug\net472\Microsoft.Office.Interop.Word.dll
 D:\resposi\concuachetngac\winform\WinFormsApp1\bin\Debug\net472\System.Data.SqlClient.dll
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.csprojAssemblyReference.cache
-D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Course.AddCourses.resources
-D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Course.EditCourse.resources
-D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Course.removeCourse.resources
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.Login.resources
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.MainMenu.resources
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.Register.resources
@@ -48,3 +45,7 @@ D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.csp
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.csproj.CopyComplete
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.exe
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.pdb
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.AddCourses.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.EditCourse.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.removeCourse.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.ManageCourses.resources

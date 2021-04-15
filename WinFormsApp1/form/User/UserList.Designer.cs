@@ -55,7 +55,7 @@ namespace WindowsFormsApp2
             this.dataGridViewUserList.Location = new System.Drawing.Point(44, 32);
             this.dataGridViewUserList.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewUserList.Name = "dataGridViewUserList";
-            this.dataGridViewUserList.RowHeadersWidth = 160;
+            this.dataGridViewUserList.RowHeadersWidth = 53;
             this.dataGridViewUserList.RowTemplate.Height = 150;
             this.dataGridViewUserList.Size = new System.Drawing.Size(1162, 515);
             this.dataGridViewUserList.TabIndex = 2;

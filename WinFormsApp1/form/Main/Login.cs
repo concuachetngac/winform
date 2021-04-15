@@ -50,7 +50,7 @@ namespace WindowsFormsApp2
             MY_DB db = new MY_DB();
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
-            SqlCommand command = new SqlCommand("SELECT * FROM account WHERE username = @User AND password = @Pass", db.getConnection);
+            SqlCommand command = new SqlCommand("SELECT * FROM [account] WHERE username = @User AND password = @Pass", db.getConnection);
             command.Parameters.Add("@User", SqlDbType.NVarChar).Value = textBoxUser.Text;
             command.Parameters.Add("@Pass", SqlDbType.NVarChar).Value = textBoxPass.Text;
             adapter.SelectCommand = command;

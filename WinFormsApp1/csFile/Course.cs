@@ -84,5 +84,15 @@ namespace WinFormsApp1
                 return false;
             }
         }
+        public DataTable getAllCourses()
+        {
+            SqlCommand cmd = new SqlCommand("SELECT label FROM course", mydb.getConnection);
+            DataTable table = new DataTable();
+            SqlDataAdapter adpt = new SqlDataAdapter();
+            adpt.SelectCommand = cmd;
+            adpt.Fill(table);
+            return table;
+        }
+   
     }
 }

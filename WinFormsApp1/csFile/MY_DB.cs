@@ -7,7 +7,7 @@ namespace WindowsFormsApp2
 {
     class MY_DB
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1VNURLH\TUAN;Initial Catalog=userList;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-NRUKIPD\TUAN;Integrated Security=True");
 
         public SqlConnection getConnection
         {
