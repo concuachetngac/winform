@@ -51,12 +51,13 @@ namespace WinFormsApp1
             // dataGridViewCheckUser
             // 
             this.dataGridViewCheckUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCheckUser.Location = new System.Drawing.Point(51, 168);
-            this.dataGridViewCheckUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridViewCheckUser.GridColor = System.Drawing.SystemColors.Menu;
+            this.dataGridViewCheckUser.Location = new System.Drawing.Point(68, 207);
+            this.dataGridViewCheckUser.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.dataGridViewCheckUser.Name = "dataGridViewCheckUser";
-            this.dataGridViewCheckUser.RowHeadersWidth = 202;
-            this.dataGridViewCheckUser.RowTemplate.Height = 150;
-            this.dataGridViewCheckUser.Size = new System.Drawing.Size(903, 366);
+            this.dataGridViewCheckUser.RowHeadersWidth = 101;
+            this.dataGridViewCheckUser.RowTemplate.Height = 170;
+            this.dataGridViewCheckUser.Size = new System.Drawing.Size(1204, 450);
             this.dataGridViewCheckUser.TabIndex = 0;
             // 
             // groupBox1
@@ -70,47 +71,51 @@ namespace WinFormsApp1
             this.groupBox1.Controls.Add(this.useDateRange);
             this.groupBox1.Controls.Add(this.yesRadio);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.groupBox1.Location = new System.Drawing.Point(244, 19);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(325, 23);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(571, 127);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox1.Size = new System.Drawing.Size(761, 156);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // dateTo
             // 
-            this.dateTo.Location = new System.Drawing.Point(408, 87);
-            this.dateTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTo.Location = new System.Drawing.Point(544, 107);
+            this.dateTo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.dateTo.Name = "dateTo";
-            this.dateTo.Size = new System.Drawing.Size(145, 20);
+            this.dateTo.Size = new System.Drawing.Size(192, 22);
             this.dateTo.TabIndex = 8;
             // 
             // and
             // 
             this.and.AutoSize = true;
             this.and.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.and.Location = new System.Drawing.Point(351, 81);
+            this.and.Location = new System.Drawing.Point(468, 100);
+            this.and.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.and.Name = "and";
-            this.and.Size = new System.Drawing.Size(48, 28);
+            this.and.Size = new System.Drawing.Size(60, 35);
             this.and.TabIndex = 7;
             this.and.Text = "And";
             // 
             // dateFrom
             // 
-            this.dateFrom.Location = new System.Drawing.Point(195, 87);
-            this.dateFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateFrom.Location = new System.Drawing.Point(260, 107);
+            this.dateFrom.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.dateFrom.Name = "dateFrom";
-            this.dateFrom.Size = new System.Drawing.Size(145, 20);
+            this.dateFrom.Size = new System.Drawing.Size(192, 22);
             this.dateFrom.TabIndex = 6;
             // 
             // date
             // 
             this.date.AutoSize = true;
             this.date.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.date.Location = new System.Drawing.Point(24, 81);
+            this.date.Location = new System.Drawing.Point(32, 100);
+            this.date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(176, 28);
+            this.date.Size = new System.Drawing.Size(223, 35);
             this.date.TabIndex = 5;
             this.date.Text = "BirthDate Between:";
             // 
@@ -118,10 +123,10 @@ namespace WinFormsApp1
             // 
             this.noRadio.AutoSize = true;
             this.noRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.noRadio.Location = new System.Drawing.Point(419, 22);
-            this.noRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.noRadio.Location = new System.Drawing.Point(559, 27);
+            this.noRadio.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.noRadio.Name = "noRadio";
-            this.noRadio.Size = new System.Drawing.Size(57, 32);
+            this.noRadio.Size = new System.Drawing.Size(70, 39);
             this.noRadio.TabIndex = 4;
             this.noRadio.TabStop = true;
             this.noRadio.Text = "No";
@@ -131,9 +136,10 @@ namespace WinFormsApp1
             // 
             this.useDateRange.AutoSize = true;
             this.useDateRange.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.useDateRange.Location = new System.Drawing.Point(24, 22);
+            this.useDateRange.Location = new System.Drawing.Point(32, 27);
+            this.useDateRange.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.useDateRange.Name = "useDateRange";
-            this.useDateRange.Size = new System.Drawing.Size(154, 28);
+            this.useDateRange.Size = new System.Drawing.Size(197, 35);
             this.useDateRange.TabIndex = 3;
             this.useDateRange.Text = "Use Date Range:";
             // 
@@ -141,10 +147,10 @@ namespace WinFormsApp1
             // 
             this.yesRadio.AutoSize = true;
             this.yesRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.yesRadio.Location = new System.Drawing.Point(213, 22);
-            this.yesRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.yesRadio.Location = new System.Drawing.Point(284, 27);
+            this.yesRadio.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.yesRadio.Name = "yesRadio";
-            this.yesRadio.Size = new System.Drawing.Size(57, 32);
+            this.yesRadio.Size = new System.Drawing.Size(72, 39);
             this.yesRadio.TabIndex = 2;
             this.yesRadio.TabStop = true;
             this.yesRadio.Text = "Yes";
@@ -157,10 +163,10 @@ namespace WinFormsApp1
             this.checkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkButton.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.checkButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkButton.Location = new System.Drawing.Point(844, 68);
-            this.checkButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkButton.Location = new System.Drawing.Point(1125, 84);
+            this.checkButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.checkButton.Name = "checkButton";
-            this.checkButton.Size = new System.Drawing.Size(109, 49);
+            this.checkButton.Size = new System.Drawing.Size(145, 60);
             this.checkButton.TabIndex = 3;
             this.checkButton.Text = "Check";
             this.checkButton.UseVisualStyleBackColor = false;
@@ -169,10 +175,10 @@ namespace WinFormsApp1
             // 
             this.allRadio.AutoSize = true;
             this.allRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.allRadio.Location = new System.Drawing.Point(79, 38);
-            this.allRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.allRadio.Location = new System.Drawing.Point(105, 47);
+            this.allRadio.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.allRadio.Name = "allRadio";
-            this.allRadio.Size = new System.Drawing.Size(53, 32);
+            this.allRadio.Size = new System.Drawing.Size(64, 39);
             this.allRadio.TabIndex = 4;
             this.allRadio.TabStop = true;
             this.allRadio.Text = "All";
@@ -182,10 +188,10 @@ namespace WinFormsApp1
             // 
             this.maleRadio.AutoSize = true;
             this.maleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.maleRadio.Location = new System.Drawing.Point(79, 71);
-            this.maleRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.maleRadio.Location = new System.Drawing.Point(105, 87);
+            this.maleRadio.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.maleRadio.Name = "maleRadio";
-            this.maleRadio.Size = new System.Drawing.Size(73, 32);
+            this.maleRadio.Size = new System.Drawing.Size(90, 39);
             this.maleRadio.TabIndex = 5;
             this.maleRadio.TabStop = true;
             this.maleRadio.Text = "Male";
@@ -195,10 +201,10 @@ namespace WinFormsApp1
             // 
             this.femaleRadio.AutoSize = true;
             this.femaleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.femaleRadio.Location = new System.Drawing.Point(79, 101);
-            this.femaleRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.femaleRadio.Location = new System.Drawing.Point(105, 124);
+            this.femaleRadio.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.femaleRadio.Name = "femaleRadio";
-            this.femaleRadio.Size = new System.Drawing.Size(92, 32);
+            this.femaleRadio.Size = new System.Drawing.Size(115, 39);
             this.femaleRadio.TabIndex = 6;
             this.femaleRadio.TabStop = true;
             this.femaleRadio.Text = "Female";
@@ -211,10 +217,10 @@ namespace WinFormsApp1
             this.toPrinterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.toPrinterButton.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.toPrinterButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.toPrinterButton.Location = new System.Drawing.Point(615, 555);
-            this.toPrinterButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.toPrinterButton.Location = new System.Drawing.Point(820, 683);
+            this.toPrinterButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.toPrinterButton.Name = "toPrinterButton";
-            this.toPrinterButton.Size = new System.Drawing.Size(238, 49);
+            this.toPrinterButton.Size = new System.Drawing.Size(317, 60);
             this.toPrinterButton.TabIndex = 7;
             this.toPrinterButton.Text = "To Printer";
             this.toPrinterButton.UseVisualStyleBackColor = false;
@@ -226,10 +232,10 @@ namespace WinFormsApp1
             this.saveToTextFileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveToTextFileButton.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.saveToTextFileButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.saveToTextFileButton.Location = new System.Drawing.Point(159, 555);
-            this.saveToTextFileButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.saveToTextFileButton.Location = new System.Drawing.Point(212, 683);
+            this.saveToTextFileButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.saveToTextFileButton.Name = "saveToTextFileButton";
-            this.saveToTextFileButton.Size = new System.Drawing.Size(238, 49);
+            this.saveToTextFileButton.Size = new System.Drawing.Size(317, 60);
             this.saveToTextFileButton.TabIndex = 8;
             this.saveToTextFileButton.Text = "Save To Text File";
             this.saveToTextFileButton.UseVisualStyleBackColor = false;
@@ -237,9 +243,9 @@ namespace WinFormsApp1
             // 
             // printSave
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 621);
+            this.ClientSize = new System.Drawing.Size(1348, 764);
             this.Controls.Add(this.saveToTextFileButton);
             this.Controls.Add(this.toPrinterButton);
             this.Controls.Add(this.femaleRadio);
@@ -248,7 +254,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.checkButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewCheckUser);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "printSave";
             this.Text = "Print & Save";
             this.Load += new System.EventHandler(this.printSave_Load);

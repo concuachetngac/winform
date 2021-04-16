@@ -2,7 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="form\Course\AddCourses.cs">
+    <Compile Update="form\CourseForm\AddCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\CourseForm\ManageCourses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="form\User\AddUser.cs">
@@ -11,7 +14,7 @@
     <Compile Update="form\User\checkUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="form\Course\EditCourse.cs">
+    <Compile Update="form\CourseForm\EditCourse.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="form\Main\Login.cs">
@@ -23,7 +26,7 @@
     <Compile Update="form\Main\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="form\Course\removeCourse.cs">
+    <Compile Update="form\CourseForm\RemoveCourse.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="form\User\UserInfo.cs">

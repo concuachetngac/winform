@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using WinFormsApp1;
 using WinFormsApp1.form;
+using WinFormsApp1.form.CourseForm;
 
 namespace WindowsFormsApp2
 {
@@ -24,6 +25,7 @@ namespace WindowsFormsApp2
             addCourse.Click += addCourse_ItemClicked;
             removeCourse.Click += removeCourse_ItemClicked;
             editCourse.Click += editCourse_ItemClicked;
+            manageCourse.Click += manageCourse_ItemClicked;
         }
 
         private void addUserStrip_ItemClicked(object sender, EventArgs e)
@@ -62,7 +64,7 @@ namespace WindowsFormsApp2
 
         private void removeCourse_ItemClicked(object sender, EventArgs e)
         {
-            removeCourse remove = new removeCourse();
+            RemoveCourse remove = new RemoveCourse();
             remove.Show();
         }
         private void editCourse_ItemClicked(object sender, EventArgs e)
@@ -70,5 +72,12 @@ namespace WindowsFormsApp2
             EditCourse edit = new EditCourse();
             edit.Show();
         }
+
+        private void manageCourse_ItemClicked(object sender, EventArgs e)
+        {
+            ManageCourses edit = new ManageCourses();
+            edit.Show();
+        }
+
     }
 }

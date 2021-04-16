@@ -318,9 +318,9 @@ namespace WindowsFormsApp2
             this.addCourse.Size = new System.Drawing.Size(270, 36);
             this.addCourse.Text = "Add Course";
             // 
-            // removeCourse
+            // RemoveCourse
             // 
-            this.removeCourse.Name = "removeCourse";
+            this.removeCourse.Name = "RemoveCourse";
             this.removeCourse.Size = new System.Drawing.Size(270, 36);
             this.removeCourse.Text = "Remove Course";
             // 

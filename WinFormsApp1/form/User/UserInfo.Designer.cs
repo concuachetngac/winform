@@ -57,99 +57,99 @@ namespace WindowsFormsApp2
             // fnameLabel
             // 
             this.fnameLabel.AutoSize = true;
-            this.fnameLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fnameLabel.Location = new System.Drawing.Point(40, 46);
+            this.fnameLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.fnameLabel.Location = new System.Drawing.Point(46, 49);
             this.fnameLabel.Name = "fnameLabel";
-            this.fnameLabel.Size = new System.Drawing.Size(110, 28);
+            this.fnameLabel.Size = new System.Drawing.Size(140, 35);
             this.fnameLabel.TabIndex = 1;
             this.fnameLabel.Text = "First Name:";
             // 
             // fnameBox
             // 
             this.fnameBox.AccessibleName = "";
-            this.fnameBox.Location = new System.Drawing.Point(168, 53);
+            this.fnameBox.Location = new System.Drawing.Point(192, 57);
             this.fnameBox.Name = "fnameBox";
-            this.fnameBox.Size = new System.Drawing.Size(181, 23);
+            this.fnameBox.Size = new System.Drawing.Size(206, 22);
             this.fnameBox.TabIndex = 2;
             // 
             // lnameLabel
             // 
             this.lnameLabel.AutoSize = true;
-            this.lnameLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lnameLabel.Location = new System.Drawing.Point(40, 84);
+            this.lnameLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.lnameLabel.Location = new System.Drawing.Point(46, 90);
             this.lnameLabel.Name = "lnameLabel";
-            this.lnameLabel.Size = new System.Drawing.Size(107, 28);
+            this.lnameLabel.Size = new System.Drawing.Size(138, 35);
             this.lnameLabel.TabIndex = 4;
             this.lnameLabel.Text = "Last Name:";
             // 
             // lnameBox
             // 
-            this.lnameBox.Location = new System.Drawing.Point(168, 84);
+            this.lnameBox.Location = new System.Drawing.Point(192, 90);
             this.lnameBox.Name = "lnameBox";
-            this.lnameBox.Size = new System.Drawing.Size(181, 23);
+            this.lnameBox.Size = new System.Drawing.Size(206, 22);
             this.lnameBox.TabIndex = 3;
             // 
             // phoneLabel
             // 
             this.phoneLabel.AutoSize = true;
-            this.phoneLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.phoneLabel.Location = new System.Drawing.Point(40, 122);
+            this.phoneLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.phoneLabel.Location = new System.Drawing.Point(46, 130);
             this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(71, 28);
+            this.phoneLabel.Size = new System.Drawing.Size(90, 35);
             this.phoneLabel.TabIndex = 6;
             this.phoneLabel.Text = "Phone:";
             // 
             // phoneNumbBox
             // 
-            this.phoneNumbBox.Location = new System.Drawing.Point(168, 128);
+            this.phoneNumbBox.Location = new System.Drawing.Point(192, 137);
             this.phoneNumbBox.Name = "phoneNumbBox";
-            this.phoneNumbBox.Size = new System.Drawing.Size(181, 23);
+            this.phoneNumbBox.Size = new System.Drawing.Size(206, 22);
             this.phoneNumbBox.TabIndex = 4;
             // 
             // genderLabel
             // 
             this.genderLabel.AutoSize = true;
-            this.genderLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.genderLabel.Location = new System.Drawing.Point(40, 153);
+            this.genderLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.genderLabel.Location = new System.Drawing.Point(46, 163);
             this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(80, 28);
+            this.genderLabel.Size = new System.Drawing.Size(101, 35);
             this.genderLabel.TabIndex = 8;
             this.genderLabel.Text = "Gender:";
             // 
             // IDLabel
             // 
             this.IDLabel.AutoSize = true;
-            this.IDLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.IDLabel.Location = new System.Drawing.Point(40, 14);
+            this.IDLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.IDLabel.Location = new System.Drawing.Point(46, 15);
             this.IDLabel.Name = "IDLabel";
-            this.IDLabel.Size = new System.Drawing.Size(35, 28);
+            this.IDLabel.Size = new System.Drawing.Size(45, 35);
             this.IDLabel.TabIndex = 9;
             this.IDLabel.Text = "ID:";
             // 
             // IDBox
             // 
-            this.IDBox.Location = new System.Drawing.Point(168, 20);
+            this.IDBox.Location = new System.Drawing.Point(192, 21);
             this.IDBox.Name = "IDBox";
-            this.IDBox.Size = new System.Drawing.Size(181, 23);
+            this.IDBox.Size = new System.Drawing.Size(206, 22);
             this.IDBox.TabIndex = 1;
             // 
             // genderGroupBox
             // 
             this.genderGroupBox.Controls.Add(this.femaleRadio);
             this.genderGroupBox.Controls.Add(this.maleRadio);
-            this.genderGroupBox.Location = new System.Drawing.Point(40, 184);
+            this.genderGroupBox.Location = new System.Drawing.Point(46, 196);
             this.genderGroupBox.Name = "genderGroupBox";
-            this.genderGroupBox.Size = new System.Drawing.Size(296, 68);
+            this.genderGroupBox.Size = new System.Drawing.Size(338, 73);
             this.genderGroupBox.TabIndex = 11;
             this.genderGroupBox.TabStop = false;
             // 
             // femaleRadio
             // 
             this.femaleRadio.AutoSize = true;
-            this.femaleRadio.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.femaleRadio.Location = new System.Drawing.Point(176, 20);
+            this.femaleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.femaleRadio.Location = new System.Drawing.Point(201, 21);
             this.femaleRadio.Name = "femaleRadio";
-            this.femaleRadio.Size = new System.Drawing.Size(92, 32);
+            this.femaleRadio.Size = new System.Drawing.Size(115, 39);
             this.femaleRadio.TabIndex = 6;
             this.femaleRadio.TabStop = true;
             this.femaleRadio.Text = "Female";
@@ -159,10 +159,10 @@ namespace WindowsFormsApp2
             // maleRadio
             // 
             this.maleRadio.AutoSize = true;
-            this.maleRadio.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maleRadio.Location = new System.Drawing.Point(17, 20);
+            this.maleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.maleRadio.Location = new System.Drawing.Point(19, 21);
             this.maleRadio.Name = "maleRadio";
-            this.maleRadio.Size = new System.Drawing.Size(73, 32);
+            this.maleRadio.Size = new System.Drawing.Size(90, 39);
             this.maleRadio.TabIndex = 5;
             this.maleRadio.TabStop = true;
             this.maleRadio.Text = "Male";
@@ -171,66 +171,66 @@ namespace WindowsFormsApp2
             // bdateLabel
             // 
             this.bdateLabel.AutoSize = true;
-            this.bdateLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bdateLabel.Location = new System.Drawing.Point(40, 269);
+            this.bdateLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.bdateLabel.Location = new System.Drawing.Point(46, 287);
             this.bdateLabel.Name = "bdateLabel";
-            this.bdateLabel.Size = new System.Drawing.Size(98, 28);
+            this.bdateLabel.Size = new System.Drawing.Size(123, 35);
             this.bdateLabel.TabIndex = 3;
             this.bdateLabel.Text = "BirthDate:";
             // 
             // birthDate
             // 
             this.birthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.birthDate.Location = new System.Drawing.Point(168, 275);
+            this.birthDate.Location = new System.Drawing.Point(192, 293);
             this.birthDate.Name = "birthDate";
-            this.birthDate.Size = new System.Drawing.Size(181, 23);
+            this.birthDate.Size = new System.Drawing.Size(206, 22);
             this.birthDate.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(40, 310);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label4.Location = new System.Drawing.Point(46, 331);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 28);
+            this.label4.Size = new System.Drawing.Size(110, 35);
             this.label4.TabIndex = 13;
             this.label4.Text = "Address:";
             // 
             // addressBox
             // 
-            this.addressBox.Location = new System.Drawing.Point(168, 310);
+            this.addressBox.Location = new System.Drawing.Point(192, 331);
             this.addressBox.Multiline = true;
             this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(181, 60);
+            this.addressBox.Size = new System.Drawing.Size(206, 64);
             this.addressBox.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(40, 383);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label5.Location = new System.Drawing.Point(46, 409);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 28);
+            this.label5.Size = new System.Drawing.Size(96, 35);
             this.label5.TabIndex = 15;
             this.label5.Text = "Picture:";
             // 
             // pictureBox
             // 
             this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox.Location = new System.Drawing.Point(169, 383);
+            this.pictureBox.Location = new System.Drawing.Point(193, 409);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(179, 158);
+            this.pictureBox.Size = new System.Drawing.Size(205, 169);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 16;
             this.pictureBox.TabStop = false;
             // 
             // removeButton
             // 
-            this.removeButton.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.removeButton.Location = new System.Drawing.Point(40, 590);
+            this.removeButton.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.removeButton.Location = new System.Drawing.Point(46, 629);
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(136, 32);
+            this.removeButton.Size = new System.Drawing.Size(155, 34);
             this.removeButton.TabIndex = 11;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = true;
@@ -238,11 +238,11 @@ namespace WindowsFormsApp2
             // 
             // editButton
             // 
-            this.editButton.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.editButton.Location = new System.Drawing.Point(212, 589);
+            this.editButton.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.editButton.Location = new System.Drawing.Point(242, 628);
             this.editButton.Name = "editButton";
             this.editButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.editButton.Size = new System.Drawing.Size(136, 32);
+            this.editButton.Size = new System.Drawing.Size(155, 34);
             this.editButton.TabIndex = 10;
             this.editButton.Text = "Edit";
             this.editButton.UseVisualStyleBackColor = true;
@@ -250,10 +250,10 @@ namespace WindowsFormsApp2
             // 
             // uploadPic
             // 
-            this.uploadPic.Location = new System.Drawing.Point(168, 541);
+            this.uploadPic.Location = new System.Drawing.Point(192, 577);
             this.uploadPic.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.uploadPic.Name = "uploadPic";
-            this.uploadPic.Size = new System.Drawing.Size(179, 22);
+            this.uploadPic.Size = new System.Drawing.Size(205, 29);
             this.uploadPic.TabIndex = 9;
             this.uploadPic.Text = "Upload Picture";
             this.uploadPic.UseVisualStyleBackColor = true;
@@ -261,11 +261,11 @@ namespace WindowsFormsApp2
             // 
             // UserInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(368, 630);
+            this.ClientSize = new System.Drawing.Size(421, 672);
             this.Controls.Add(this.uploadPic);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.removeButton);
