@@ -72,9 +72,9 @@ namespace WindowsFormsApp2
             this.genderGroupBox.Controls.Add(this.femaleRadio);
             this.genderGroupBox.Controls.Add(this.maleRadio);
             this.genderGroupBox.Location = new System.Drawing.Point(28, 169);
-            this.genderGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.genderGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.genderGroupBox.Name = "genderGroupBox";
-            this.genderGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.genderGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.genderGroupBox.Size = new System.Drawing.Size(308, 69);
             this.genderGroupBox.TabIndex = 1;
             this.genderGroupBox.TabStop = false;
@@ -85,7 +85,7 @@ namespace WindowsFormsApp2
             this.femaleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.femaleRadio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.femaleRadio.Location = new System.Drawing.Point(197, 17);
-            this.femaleRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.femaleRadio.Margin = new System.Windows.Forms.Padding(2);
             this.femaleRadio.Name = "femaleRadio";
             this.femaleRadio.Size = new System.Drawing.Size(92, 32);
             this.femaleRadio.TabIndex = 6;
@@ -99,7 +99,7 @@ namespace WindowsFormsApp2
             this.maleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.maleRadio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.maleRadio.Location = new System.Drawing.Point(29, 17);
-            this.maleRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maleRadio.Margin = new System.Windows.Forms.Padding(2);
             this.maleRadio.Name = "maleRadio";
             this.maleRadio.Size = new System.Drawing.Size(73, 32);
             this.maleRadio.TabIndex = 5;
@@ -124,7 +124,7 @@ namespace WindowsFormsApp2
             // 
             this.fnameBox.AccessibleName = "";
             this.fnameBox.Location = new System.Drawing.Point(159, 43);
-            this.fnameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fnameBox.Margin = new System.Windows.Forms.Padding(2);
             this.fnameBox.Name = "fnameBox";
             this.fnameBox.Size = new System.Drawing.Size(177, 20);
             this.fnameBox.TabIndex = 2;
@@ -159,7 +159,7 @@ namespace WindowsFormsApp2
             // lnameBox
             // 
             this.lnameBox.Location = new System.Drawing.Point(159, 82);
-            this.lnameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lnameBox.Margin = new System.Windows.Forms.Padding(2);
             this.lnameBox.Name = "lnameBox";
             this.lnameBox.Size = new System.Drawing.Size(177, 20);
             this.lnameBox.TabIndex = 3;
@@ -181,7 +181,7 @@ namespace WindowsFormsApp2
             // phoneNumbBox
             // 
             this.phoneNumbBox.Location = new System.Drawing.Point(159, 119);
-            this.phoneNumbBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneNumbBox.Margin = new System.Windows.Forms.Padding(2);
             this.phoneNumbBox.Name = "phoneNumbBox";
             this.phoneNumbBox.Size = new System.Drawing.Size(177, 20);
             this.phoneNumbBox.TabIndex = 4;
@@ -203,7 +203,7 @@ namespace WindowsFormsApp2
             // addressBox
             // 
             this.addressBox.Location = new System.Drawing.Point(159, 290);
-            this.addressBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressBox.Multiline = true;
             this.addressBox.Name = "addressBox";
             this.addressBox.Size = new System.Drawing.Size(177, 53);
@@ -225,12 +225,14 @@ namespace WindowsFormsApp2
             // 
             // birthDate
             // 
+            this.birthDate.Cursor = System.Windows.Forms.Cursors.Default;
             this.birthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.birthDate.Location = new System.Drawing.Point(159, 254);
-            this.birthDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.birthDate.Margin = new System.Windows.Forms.Padding(2);
             this.birthDate.Name = "birthDate";
             this.birthDate.Size = new System.Drawing.Size(177, 20);
             this.birthDate.TabIndex = 7;
+            this.birthDate.Value = new System.DateTime(2021, 4, 21, 0, 0, 0, 0);
             this.birthDate.ValueChanged += new System.EventHandler(this.birthDate_ValueChanged);
             // 
             // pictureBox
@@ -261,7 +263,7 @@ namespace WindowsFormsApp2
             this.cancelButton.BackColor = System.Drawing.Color.Aqua;
             this.cancelButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.cancelButton.Location = new System.Drawing.Point(28, 558);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(2);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(125, 48);
             this.cancelButton.TabIndex = 11;
@@ -274,7 +276,7 @@ namespace WindowsFormsApp2
             this.saveButton.BackColor = System.Drawing.Color.Lime;
             this.saveButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.saveButton.Location = new System.Drawing.Point(211, 558);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(125, 48);
             this.saveButton.TabIndex = 10;
@@ -299,7 +301,7 @@ namespace WindowsFormsApp2
             // IDBox
             // 
             this.IDBox.Location = new System.Drawing.Point(159, 11);
-            this.IDBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IDBox.Margin = new System.Windows.Forms.Padding(2);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(177, 20);
             this.IDBox.TabIndex = 1;
@@ -330,7 +332,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.IDlabel);
             this.Controls.Add(this.phoneLabel);
             this.Controls.Add(this.lnameLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddUser";
             this.Text = "Add User";
             this.Load += new System.EventHandler(this.Form2_Load);

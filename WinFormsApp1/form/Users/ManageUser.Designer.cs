@@ -329,6 +329,7 @@ namespace WinFormsApp1.form.Users
             this.resetButton.TabIndex = 21;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // downloadButton
             // 
@@ -348,22 +349,25 @@ namespace WinFormsApp1.form.Users
             this.listUserDataGrid.Location = new System.Drawing.Point(376, 68);
             this.listUserDataGrid.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.listUserDataGrid.Name = "listUserDataGrid";
-            this.listUserDataGrid.Size = new System.Drawing.Size(778, 618);
+            this.listUserDataGrid.RowTemplate.Height = 100;
+            this.listUserDataGrid.Size = new System.Drawing.Size(943, 618);
             this.listUserDataGrid.TabIndex = 23;
+            this.listUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listUserDataGrid_CellContentClick);
             // 
             // totalUserLabel
             // 
             this.totalUserLabel.AutoSize = true;
             this.totalUserLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.totalUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalUserLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.totalUserLabel.Location = new System.Drawing.Point(998, 686);
+            this.totalUserLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.totalUserLabel.Location = new System.Drawing.Point(1157, 686);
             this.totalUserLabel.Margin = new System.Windows.Forms.Padding(0);
             this.totalUserLabel.Name = "totalUserLabel";
             this.totalUserLabel.Padding = new System.Windows.Forms.Padding(19, 8, 19, 8);
-            this.totalUserLabel.Size = new System.Drawing.Size(156, 41);
+            this.totalUserLabel.Size = new System.Drawing.Size(172, 41);
             this.totalUserLabel.TabIndex = 24;
-            this.totalUserLabel.Text = "Total Users:";
+            this.totalUserLabel.Text = "Total Users: 1";
+            this.totalUserLabel.Click += new System.EventHandler(this.totalUserLabel_Click);
             // 
             // enterLabel
             // 
@@ -405,7 +409,7 @@ namespace WinFormsApp1.form.Users
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(1177, 781);
+            this.ClientSize = new System.Drawing.Size(1335, 781);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.enterIDBox);
             this.Controls.Add(this.enterLabel);
@@ -433,9 +437,10 @@ namespace WinFormsApp1.form.Users
             this.Controls.Add(this.lnameLabel);
             this.Controls.Add(this.fnameLabel);
             this.Controls.Add(this.IDlabel);
-            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "ManageUser";
             this.Text = "Manage User";
+            this.Load += new System.EventHandler(this.ManageUser_Load);
             this.genderGroupBox.ResumeLayout(false);
             this.genderGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();

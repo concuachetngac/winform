@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using WinFormsApp1.form.Users;
 
 namespace WindowsFormsApp2
 {
@@ -37,7 +38,7 @@ namespace WindowsFormsApp2
             {
                 gender = "Male";
             }
-            DateTime bdate = birthDate.Value;
+            DateTime bdate = birthDate.Value.Date;
             string phone = phoneNumbBox.Text;
             string adrs = addressBox.Text;
             MemoryStream picture = new MemoryStream();
@@ -83,6 +84,12 @@ namespace WindowsFormsApp2
         private void bdateLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void addCourseButton_Click(object sender, EventArgs e)
+        {
+            AddCourse addcourse = new AddCourse();
+            addcourse.Show();
         }
     }
 }

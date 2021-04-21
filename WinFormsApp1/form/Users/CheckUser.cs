@@ -32,7 +32,7 @@ namespace WinFormsApp1
         {
             dataGridViewCheckUser.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            dataGridViewCheckUser.RowTemplate.Height = 80;
+            dataGridViewCheckUser.RowTemplate.Height = 120;
             dataGridViewCheckUser.DataSource = student.getStudents(command);
             picCol = (DataGridViewImageColumn)dataGridViewCheckUser.Columns[7];
             picCol.ImageLayout = DataGridViewImageCellLayout.Stretch;

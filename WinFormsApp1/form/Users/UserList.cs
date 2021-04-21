@@ -12,6 +12,7 @@ namespace WindowsFormsApp2
 {
     public partial class UserList : Form
     {
+        User user = new User();
         public UserList()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace WindowsFormsApp2
 
         private void UserList_Load(object sender, EventArgs e)
         {
-            dataGridViewUserList.DataSource = dataTable();
+            dataGridViewUserList.DataSource = user.userList();
             DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
             imgColumn = (DataGridViewImageColumn)dataGridViewUserList.Columns[7];
             imgColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
@@ -38,20 +39,11 @@ namespace WindowsFormsApp2
 
         }
 
-        private DataTable dataTable()
-        {
-            MY_DB db = new MY_DB();
-            DataTable tb = new DataTable();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM listUser", db.getConnection);
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = cmd;
-            adapter.Fill(tb);
-            return tb;
-        }
+        
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
-            dataGridViewUserList.DataSource = dataTable();
+            dataGridViewUserList.DataSource = user.userList();
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)

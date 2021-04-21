@@ -64,7 +64,7 @@ namespace WindowsFormsApp2
             string fname = fnameBox.Text;
             int phone = Convert.ToInt32(phoneNumbBox.Text);
             string address = addressBox.Text;
-            DateTime bdate = birthDate.Value;
+            DateTime bdate = birthDate.Value.Date;
             string gender = "Female";
             if (maleRadio.Checked)
             {

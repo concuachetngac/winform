@@ -50,7 +50,7 @@ namespace WindowsFormsApp2
             this.removeButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
             this.uploadPic = new System.Windows.Forms.Button();
-            this.addCourse = new System.Windows.Forms.Button();
+            this.addCourseButton = new System.Windows.Forms.Button();
             this.genderGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +71,7 @@ namespace WindowsFormsApp2
             // 
             this.fnameBox.AccessibleName = "";
             this.fnameBox.Location = new System.Drawing.Point(145, 79);
-            this.fnameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fnameBox.Margin = new System.Windows.Forms.Padding(2);
             this.fnameBox.Name = "fnameBox";
             this.fnameBox.Size = new System.Drawing.Size(210, 20);
             this.fnameBox.TabIndex = 2;
@@ -91,7 +91,7 @@ namespace WindowsFormsApp2
             // lnameBox
             // 
             this.lnameBox.Location = new System.Drawing.Point(145, 131);
-            this.lnameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lnameBox.Margin = new System.Windows.Forms.Padding(2);
             this.lnameBox.Name = "lnameBox";
             this.lnameBox.Size = new System.Drawing.Size(210, 20);
             this.lnameBox.TabIndex = 3;
@@ -111,7 +111,7 @@ namespace WindowsFormsApp2
             // phoneNumbBox
             // 
             this.phoneNumbBox.Location = new System.Drawing.Point(144, 184);
-            this.phoneNumbBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneNumbBox.Margin = new System.Windows.Forms.Padding(2);
             this.phoneNumbBox.Name = "phoneNumbBox";
             this.phoneNumbBox.Size = new System.Drawing.Size(210, 20);
             this.phoneNumbBox.TabIndex = 4;
@@ -143,7 +143,7 @@ namespace WindowsFormsApp2
             // IDBox
             // 
             this.IDBox.Location = new System.Drawing.Point(144, 17);
-            this.IDBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IDBox.Margin = new System.Windows.Forms.Padding(2);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(210, 20);
             this.IDBox.TabIndex = 1;
@@ -153,9 +153,9 @@ namespace WindowsFormsApp2
             this.genderGroupBox.Controls.Add(this.femaleRadio);
             this.genderGroupBox.Controls.Add(this.maleRadio);
             this.genderGroupBox.Location = new System.Drawing.Point(36, 262);
-            this.genderGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.genderGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.genderGroupBox.Name = "genderGroupBox";
-            this.genderGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.genderGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.genderGroupBox.Size = new System.Drawing.Size(318, 90);
             this.genderGroupBox.TabIndex = 11;
             this.genderGroupBox.TabStop = false;
@@ -166,7 +166,7 @@ namespace WindowsFormsApp2
             this.femaleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.femaleRadio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.femaleRadio.Location = new System.Drawing.Point(191, 33);
-            this.femaleRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.femaleRadio.Margin = new System.Windows.Forms.Padding(2);
             this.femaleRadio.Name = "femaleRadio";
             this.femaleRadio.Size = new System.Drawing.Size(92, 32);
             this.femaleRadio.TabIndex = 6;
@@ -181,7 +181,7 @@ namespace WindowsFormsApp2
             this.maleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.maleRadio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.maleRadio.Location = new System.Drawing.Point(20, 33);
-            this.maleRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maleRadio.Margin = new System.Windows.Forms.Padding(2);
             this.maleRadio.Name = "maleRadio";
             this.maleRadio.Size = new System.Drawing.Size(73, 32);
             this.maleRadio.TabIndex = 5;
@@ -206,7 +206,7 @@ namespace WindowsFormsApp2
             // 
             this.birthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.birthDate.Location = new System.Drawing.Point(144, 378);
-            this.birthDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.birthDate.Margin = new System.Windows.Forms.Padding(2);
             this.birthDate.Name = "birthDate";
             this.birthDate.Size = new System.Drawing.Size(210, 20);
             this.birthDate.TabIndex = 7;
@@ -226,7 +226,7 @@ namespace WindowsFormsApp2
             // addressBox
             // 
             this.addressBox.Location = new System.Drawing.Point(547, 12);
-            this.addressBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressBox.Multiline = true;
             this.addressBox.Name = "addressBox";
             this.addressBox.Size = new System.Drawing.Size(268, 119);
@@ -246,7 +246,7 @@ namespace WindowsFormsApp2
             // 
             // pictureBox
             // 
-            this.pictureBox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox.Location = new System.Drawing.Point(547, 176);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
@@ -262,7 +262,7 @@ namespace WindowsFormsApp2
             this.removeButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.removeButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.removeButton.Location = new System.Drawing.Point(88, 487);
-            this.removeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.removeButton.Margin = new System.Windows.Forms.Padding(2);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(126, 48);
             this.removeButton.TabIndex = 11;
@@ -276,7 +276,7 @@ namespace WindowsFormsApp2
             this.editButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.editButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.editButton.Location = new System.Drawing.Point(362, 487);
-            this.editButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.editButton.Margin = new System.Windows.Forms.Padding(2);
             this.editButton.Name = "editButton";
             this.editButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.editButton.Size = new System.Drawing.Size(126, 48);
@@ -297,19 +297,20 @@ namespace WindowsFormsApp2
             this.uploadPic.UseVisualStyleBackColor = true;
             this.uploadPic.Click += new System.EventHandler(this.uploadPic_Click);
             // 
-            // addCourse
+            // addCourseButton
             // 
-            this.addCourse.BackColor = System.Drawing.Color.LimeGreen;
-            this.addCourse.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.addCourse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addCourse.Location = new System.Drawing.Point(624, 487);
-            this.addCourse.Margin = new System.Windows.Forms.Padding(2);
-            this.addCourse.Name = "addCourse";
-            this.addCourse.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.addCourse.Size = new System.Drawing.Size(126, 48);
-            this.addCourse.TabIndex = 17;
-            this.addCourse.Text = "Add Course";
-            this.addCourse.UseVisualStyleBackColor = false;
+            this.addCourseButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.addCourseButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.addCourseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addCourseButton.Location = new System.Drawing.Point(624, 487);
+            this.addCourseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addCourseButton.Name = "addCourseButton";
+            this.addCourseButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.addCourseButton.Size = new System.Drawing.Size(126, 48);
+            this.addCourseButton.TabIndex = 17;
+            this.addCourseButton.Text = "Add Course";
+            this.addCourseButton.UseVisualStyleBackColor = false;
+            this.addCourseButton.Click += new System.EventHandler(this.addCourseButton_Click);
             // 
             // UserInfo
             // 
@@ -319,7 +320,7 @@ namespace WindowsFormsApp2
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(860, 546);
-            this.Controls.Add(this.addCourse);
+            this.Controls.Add(this.addCourseButton);
             this.Controls.Add(this.uploadPic);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.removeButton);
@@ -339,7 +340,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.lnameLabel);
             this.Controls.Add(this.fnameBox);
             this.Controls.Add(this.fnameLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "User Infomation";
@@ -375,6 +376,6 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.RadioButton femaleRadio;
         public System.Windows.Forms.RadioButton maleRadio;
         private System.Windows.Forms.Button uploadPic;
-        private System.Windows.Forms.Button addCourse;
+        private System.Windows.Forms.Button addCourseButton;
     }
 }

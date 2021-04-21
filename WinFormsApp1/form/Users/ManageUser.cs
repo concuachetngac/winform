@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -14,6 +15,9 @@ namespace WinFormsApp1.form.Users
 {
     public partial class ManageUser : Form
     {
+        User user = new User();
+        
+
         public ManageUser()
         {
             InitializeComponent();
@@ -21,7 +25,7 @@ namespace WinFormsApp1.form.Users
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            User user = new User();
+            
             int id = Convert.ToInt32(IDBox.Text);
             string lname = lnameBox.Text;
             string fname = fnameBox.Text;
@@ -71,7 +75,6 @@ namespace WinFormsApp1.form.Users
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            User user = new User();
             int id = Convert.ToInt32(IDBox.Text);
             string fname = fnameBox.Text;
             string lname = lnameBox.Text;
@@ -111,7 +114,6 @@ namespace WinFormsApp1.form.Users
 
         private void removeButton_Click(object sender, EventArgs e)
         {
-            User user = new User();
             if (user.deleteUser(Convert.ToInt32(IDBox.Text)))
             {
                 MessageBox.Show("The information was removed");
@@ -120,6 +122,53 @@ namespace WinFormsApp1.form.Users
             {
                 MessageBox.Show("There was an error");
             }
+        }
+
+        private void listUserDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            IDBox.Text = listUserDataGrid.CurrentRow.Cells[0].Value.ToString();
+            fnameBox.Text = listUserDataGrid.CurrentRow.Cells[1].Value.ToString();
+            lnameBox.Text = listUserDataGrid.CurrentRow.Cells[2].Value.ToString();
+            birthDate.Value = (DateTime)listUserDataGrid.CurrentRow.Cells[3].Value;
+            if (listUserDataGrid.CurrentRow.Cells[4].Value.ToString().Equals("Female"))
+            {
+                femaleRadio.Checked = true;
+            }
+            else
+            {
+                maleRadio.Checked = true;
+            }
+            phoneNumbBox.Text = listUserDataGrid.CurrentRow.Cells[5].Value.ToString();
+            addressBox.Text = listUserDataGrid.CurrentRow.Cells[6].Value.ToString();
+            byte[] pic;
+            pic = (byte[])listUserDataGrid.CurrentRow.Cells[7].Value;
+            MemoryStream picture = new MemoryStream(pic);
+            pictureBox.Image = Image.FromStream(picture);
+
+        }
+
+        private void ManageUser_Load(object sender, EventArgs e)
+        {
+            MY_DB db = new MY_DB();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM listUser", db.getConnection);
+            listUserDataGrid.DataSource = user.userList();
+            totalUserLabel.Text = "Total User: " + user.getStudents(cmd).Rows.Count.ToString();
+            DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
+            imgColumn = (DataGridViewImageColumn)listUserDataGrid.Columns[7];
+            imgColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
+        }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            MY_DB db = new MY_DB();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM listUser", db.getConnection);
+            listUserDataGrid.DataSource = user.userList();
+            totalUserLabel.Text = "Total User: " + user.getStudents(cmd).Rows.Count.ToString();
+        }
+
+        private void totalUserLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

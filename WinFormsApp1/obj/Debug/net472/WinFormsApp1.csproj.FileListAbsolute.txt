@@ -51,3 +51,4 @@ H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.checkUser.resou
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.ManageUser.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.UserInfo.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.UserList.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.AddCourse.resources

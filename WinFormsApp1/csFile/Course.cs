@@ -29,6 +29,7 @@ namespace WinFormsApp1
                 return false;
             }
         }
+        
 
         public bool insertCourse(int id, string label, int period, int semester, string des)
         {

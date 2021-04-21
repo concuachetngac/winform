@@ -40,10 +40,10 @@ namespace WindowsFormsApp2
             this.refreshButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.refreshButton.Font = new System.Drawing.Font("Segoe UI", 22F);
             this.refreshButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.refreshButton.Location = new System.Drawing.Point(505, 574);
-            this.refreshButton.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.refreshButton.Location = new System.Drawing.Point(448, 475);
+            this.refreshButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(288, 61);
+            this.refreshButton.Size = new System.Drawing.Size(216, 50);
             this.refreshButton.TabIndex = 1;
             this.refreshButton.Text = "Refresh";
             this.refreshButton.UseVisualStyleBackColor = false;
@@ -52,22 +52,23 @@ namespace WindowsFormsApp2
             // dataGridViewUserList
             // 
             this.dataGridViewUserList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUserList.Location = new System.Drawing.Point(44, 32);
+            this.dataGridViewUserList.Location = new System.Drawing.Point(33, 26);
             this.dataGridViewUserList.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewUserList.Name = "dataGridViewUserList";
             this.dataGridViewUserList.RowHeadersWidth = 53;
             this.dataGridViewUserList.RowTemplate.Height = 150;
-            this.dataGridViewUserList.Size = new System.Drawing.Size(1162, 515);
+            this.dataGridViewUserList.Size = new System.Drawing.Size(970, 418);
             this.dataGridViewUserList.TabIndex = 2;
             this.dataGridViewUserList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // UserList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 660);
+            this.ClientSize = new System.Drawing.Size(1044, 536);
             this.Controls.Add(this.dataGridViewUserList);
             this.Controls.Add(this.refreshButton);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserList";
             this.Text = "User List";
             this.Load += new System.EventHandler(this.UserList_Load);
