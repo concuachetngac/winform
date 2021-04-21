@@ -33,14 +33,15 @@ namespace WinFormsApp1.form
         private void editCourseButton_Click(object sender, EventArgs e)
         {
             Course course = new Course();
-            string label = selectBox.Text;
             int id = Convert.ToInt32(IDBox.Text);
             string newlabel = labelBox.Text;
             int period = Convert.ToInt32(periodNumb.Value);
+            int semester = Convert.ToInt32(semesterBox.Value);
             string description = descriptionBox.Text;
             try
             {
-                if (course.editCourse(id, label, newlabel, period, description))
+                string label = selectBox.Text;
+                if (course.editCourse(id, label, newlabel, period, semester, description))
                 {
                     MessageBox.Show("Edit Successfully", "Success");
                 }
@@ -65,7 +66,8 @@ namespace WinFormsApp1.form
             IDBox.Text = table.Rows[0].ItemArray[0].ToString();
             labelBox.Text = table.Rows[0].ItemArray[1].ToString();
             periodNumb.Value = Convert.ToInt32(table.Rows[0].ItemArray[2]);
-            descriptionBox.Text = table.Rows[0].ItemArray[3].ToString();          
+            descriptionBox.Text = table.Rows[0].ItemArray[3].ToString();  
+            semesterBox.Value = Convert.ToInt32(table.Rows[0].ItemArray[4]);
         }
     }
 }

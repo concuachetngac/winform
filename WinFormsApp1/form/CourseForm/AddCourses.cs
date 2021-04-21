@@ -45,9 +45,10 @@ namespace WinFormsApp1.form
             {
                 int id = Convert.ToInt32(courseIDBox.Text);
                 string label = labelBox.Text;
-                int period = Convert.ToInt32(periodNumb.Text);
+                int period = Convert.ToInt32(periodNumb.Value);
                 string description = descriptionBox.Text;
-                if (course.insertCourse(id, label, period, description))
+                int semester = Convert.ToInt32(semesterBox.Value);
+                if (course.insertCourse(id, label, period, semester, description))
                 {
                     MessageBox.Show("Added");
                 }

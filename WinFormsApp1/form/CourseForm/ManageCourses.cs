@@ -41,6 +41,7 @@ namespace WinFormsApp1.form.CourseForm
             labelBox.Text = table.Rows[0].ItemArray[1].ToString();
             periodNumb.Value = Convert.ToInt32(table.Rows[0].ItemArray[2]);
             descriptionBox.Text = table.Rows[0].ItemArray[3].ToString();
+            semesterBox.Value = Convert.ToInt32(table.Rows[0].ItemArray[4]);
         }
 
         private void firstButton_Click(object sender, EventArgs e)
@@ -73,14 +74,60 @@ namespace WinFormsApp1.form.CourseForm
         private void addButton_Click(object sender, EventArgs e)
         {
             Course course = new Course();
-            
-          
+            try
+            {
+                int id = Convert.ToInt32(IDBox.Text);
+                string label = labelBox.Text;
+                int period = Convert.ToInt32(periodNumb.Value);
+                string description = descriptionBox.Text;
+                int semester = Convert.ToInt32(semesterBox.Value);
+
+                if (course.insertCourse(id, label, period, semester, description))
+                {
+                    MessageBox.Show("Added");
+                    refreshCourseListBox();
+                }
+                else
+                {
+                    MessageBox.Show("That was an unknow error !!!");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("ID or Label is available !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
 
         }
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            
+            Course course = new Course();
+            int id = Convert.ToInt32(IDBox.Text);
+            string newlabel = labelBox.Text;
+            int period = Convert.ToInt32(periodNumb.Value);
+            string description = descriptionBox.Text;
+            int semester = Convert.ToInt32(semesterBox.Value);
+
+            try
+            {
+                string label = courseListBox.SelectedItem.ToString();
+                if (course.editCourse(id, label, newlabel, period, semester, description))
+                {
+                    MessageBox.Show("Edit Successfully", "Success");
+                    refreshCourseListBox();
+                }
+                else
+                {
+                    MessageBox.Show("ID or Label is available !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("ID or Label is available or you haven't chosen a course yet !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
         public void refreshCourseListBox()
         {

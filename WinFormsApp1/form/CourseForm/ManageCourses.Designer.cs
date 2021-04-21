@@ -46,7 +46,10 @@ namespace WinFormsApp1.form.CourseForm
             this.removeButton = new System.Windows.Forms.Button();
             this.courseListBox = new System.Windows.Forms.ListBox();
             this.totalCourselLabel = new System.Windows.Forms.Label();
+            this.semester = new System.Windows.Forms.Label();
+            this.semesterBox = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.periodNumb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.semesterBox)).BeginInit();
             this.SuspendLayout();
             // 
             // IDLabel
@@ -65,7 +68,7 @@ namespace WinFormsApp1.form.CourseForm
             // 
             this.IDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDBox.Location = new System.Drawing.Point(164, 30);
-            this.IDBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IDBox.Margin = new System.Windows.Forms.Padding(2);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(142, 26);
             this.IDBox.TabIndex = 1;
@@ -75,7 +78,7 @@ namespace WinFormsApp1.form.CourseForm
             this.descriptionLabel.AutoSize = true;
             this.descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.descriptionLabel.Location = new System.Drawing.Point(37, 193);
+            this.descriptionLabel.Location = new System.Drawing.Point(36, 247);
             this.descriptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(115, 25);
@@ -87,7 +90,7 @@ namespace WinFormsApp1.form.CourseForm
             this.hoursNumbLab.AutoSize = true;
             this.hoursNumbLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hoursNumbLab.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.hoursNumbLab.Location = new System.Drawing.Point(9, 137);
+            this.hoursNumbLab.Location = new System.Drawing.Point(7, 141);
             this.hoursNumbLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.hoursNumbLab.Name = "hoursNumbLab";
             this.hoursNumbLab.Size = new System.Drawing.Size(144, 25);
@@ -110,7 +113,7 @@ namespace WinFormsApp1.form.CourseForm
             // 
             this.labelBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBox.Location = new System.Drawing.Point(164, 81);
-            this.labelBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelBox.Margin = new System.Windows.Forms.Padding(2);
             this.labelBox.Name = "labelBox";
             this.labelBox.Size = new System.Drawing.Size(216, 26);
             this.labelBox.TabIndex = 6;
@@ -118,18 +121,18 @@ namespace WinFormsApp1.form.CourseForm
             // descriptionBox
             // 
             this.descriptionBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptionBox.Location = new System.Drawing.Point(164, 193);
-            this.descriptionBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.descriptionBox.Location = new System.Drawing.Point(164, 248);
+            this.descriptionBox.Margin = new System.Windows.Forms.Padding(2);
             this.descriptionBox.Multiline = true;
             this.descriptionBox.Name = "descriptionBox";
-            this.descriptionBox.Size = new System.Drawing.Size(216, 74);
+            this.descriptionBox.Size = new System.Drawing.Size(216, 53);
             this.descriptionBox.TabIndex = 7;
             // 
             // periodNumb
             // 
             this.periodNumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.periodNumb.Location = new System.Drawing.Point(164, 143);
-            this.periodNumb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.periodNumb.Margin = new System.Windows.Forms.Padding(2);
             this.periodNumb.Minimum = new decimal(new int[] {
             10,
             0,
@@ -150,7 +153,7 @@ namespace WinFormsApp1.form.CourseForm
             this.firstButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.firstButton.Location = new System.Drawing.Point(13, 324);
-            this.firstButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstButton.Margin = new System.Windows.Forms.Padding(2);
             this.firstButton.Name = "firstButton";
             this.firstButton.Size = new System.Drawing.Size(103, 40);
             this.firstButton.TabIndex = 9;
@@ -164,7 +167,7 @@ namespace WinFormsApp1.form.CourseForm
             this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.nextButton.Location = new System.Drawing.Point(136, 324);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(2);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(103, 40);
             this.nextButton.TabIndex = 10;
@@ -178,7 +181,7 @@ namespace WinFormsApp1.form.CourseForm
             this.previousButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previousButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.previousButton.Location = new System.Drawing.Point(254, 324);
-            this.previousButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.previousButton.Margin = new System.Windows.Forms.Padding(2);
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(103, 40);
             this.previousButton.TabIndex = 11;
@@ -192,7 +195,7 @@ namespace WinFormsApp1.form.CourseForm
             this.lastButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lastButton.Location = new System.Drawing.Point(377, 324);
-            this.lastButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lastButton.Margin = new System.Windows.Forms.Padding(2);
             this.lastButton.Name = "lastButton";
             this.lastButton.Size = new System.Drawing.Size(103, 40);
             this.lastButton.TabIndex = 12;
@@ -206,7 +209,7 @@ namespace WinFormsApp1.form.CourseForm
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.addButton.Location = new System.Drawing.Point(70, 389);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(103, 57);
             this.addButton.TabIndex = 13;
@@ -220,7 +223,7 @@ namespace WinFormsApp1.form.CourseForm
             this.editButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.editButton.Location = new System.Drawing.Point(194, 389);
-            this.editButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.editButton.Margin = new System.Windows.Forms.Padding(2);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(103, 57);
             this.editButton.TabIndex = 14;
@@ -234,7 +237,7 @@ namespace WinFormsApp1.form.CourseForm
             this.removeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.removeButton.Location = new System.Drawing.Point(322, 389);
-            this.removeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.removeButton.Margin = new System.Windows.Forms.Padding(2);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(103, 57);
             this.removeButton.TabIndex = 15;
@@ -248,7 +251,7 @@ namespace WinFormsApp1.form.CourseForm
             this.courseListBox.FormattingEnabled = true;
             this.courseListBox.ItemHeight = 31;
             this.courseListBox.Location = new System.Drawing.Point(520, 29);
-            this.courseListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.courseListBox.Margin = new System.Windows.Forms.Padding(2);
             this.courseListBox.Name = "courseListBox";
             this.courseListBox.Size = new System.Drawing.Size(372, 376);
             this.courseListBox.TabIndex = 18;
@@ -268,12 +271,49 @@ namespace WinFormsApp1.form.CourseForm
             this.totalCourselLabel.TabIndex = 19;
             this.totalCourselLabel.Text = "Total Courses:";
             // 
+            // semester
+            // 
+            this.semester.AutoSize = true;
+            this.semester.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.semester.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.semester.Location = new System.Drawing.Point(49, 191);
+            this.semester.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.semester.Name = "semester";
+            this.semester.Size = new System.Drawing.Size(102, 25);
+            this.semester.TabIndex = 20;
+            this.semester.Text = "Semester:";
+            // 
+            // semesterBox
+            // 
+            this.semesterBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.semesterBox.Location = new System.Drawing.Point(164, 196);
+            this.semesterBox.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.semesterBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.semesterBox.Name = "semesterBox";
+            this.semesterBox.Size = new System.Drawing.Size(216, 27);
+            this.semesterBox.TabIndex = 21;
+            this.semesterBox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // ManageCourses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(919, 474);
+            this.Controls.Add(this.semesterBox);
+            this.Controls.Add(this.semester);
             this.Controls.Add(this.totalCourselLabel);
             this.Controls.Add(this.courseListBox);
             this.Controls.Add(this.removeButton);
@@ -291,11 +331,12 @@ namespace WinFormsApp1.form.CourseForm
             this.Controls.Add(this.descriptionLabel);
             this.Controls.Add(this.IDBox);
             this.Controls.Add(this.IDLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ManageCourses";
             this.Text = "ManageCourses";
             this.Load += new System.EventHandler(this.ManageCourses_Load);
             ((System.ComponentModel.ISupportInitialize)(this.periodNumb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.semesterBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,5 +361,7 @@ namespace WinFormsApp1.form.CourseForm
         private System.Windows.Forms.Button removeButton;
         private System.Windows.Forms.Label totalCourselLabel;
         public System.Windows.Forms.ListBox courseListBox;
+        private System.Windows.Forms.Label semester;
+        private System.Windows.Forms.NumericUpDown semesterBox;
     }
 }

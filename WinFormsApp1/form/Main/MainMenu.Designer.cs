@@ -29,7 +29,6 @@ namespace WindowsFormsApp2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,14 +59,20 @@ namespace WindowsFormsApp2
             this.addUserToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.mangeUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.editAndRemove = new System.Windows.Forms.ToolStripMenuItem();
             this.coursesToolStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.sroceToolStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addCourse = new System.Windows.Forms.ToolStripMenuItem();
             this.removeCourse = new System.Windows.Forms.ToolStripMenuItem();
             this.editCourse = new System.Windows.Forms.ToolStripMenuItem();
             this.manageCourse = new System.Windows.Forms.ToolStripMenuItem();
             this.printCourse = new System.Windows.Forms.ToolStripMenuItem();
+            this.sroceToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.addScore = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeScore = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageScore = new System.Windows.Forms.ToolStripMenuItem();
+            this.avgScore = new System.Windows.Forms.ToolStripMenuItem();
+            this.printResult = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,7 +138,6 @@ namespace WindowsFormsApp2
             // 
             // cutToolStripMenuItem
             // 
-         
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
@@ -142,7 +146,6 @@ namespace WindowsFormsApp2
             // 
             // copyToolStripMenuItem
             // 
-         
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
@@ -151,7 +154,6 @@ namespace WindowsFormsApp2
             // 
             // pasteToolStripMenuItem
             // 
- 
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
@@ -171,7 +173,6 @@ namespace WindowsFormsApp2
             // 
             // newToolStripMenuItem
             // 
-       
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
@@ -180,7 +181,6 @@ namespace WindowsFormsApp2
             // 
             // openToolStripMenuItem
             // 
-     
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
@@ -194,7 +194,6 @@ namespace WindowsFormsApp2
             // 
             // saveToolStripMenuItem
             // 
-     
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
@@ -214,7 +213,6 @@ namespace WindowsFormsApp2
             // 
             // printToolStripMenuItem
             // 
-     
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
@@ -223,7 +221,6 @@ namespace WindowsFormsApp2
             // 
             // printPreviewToolStripMenuItem
             // 
-
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
             this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(223, 34);
@@ -246,35 +243,42 @@ namespace WindowsFormsApp2
             this.userList,
             this.addUserToolStrip,
             this.printToolStrip,
-            this.mangeUser});
-            this.userToolStrip.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mangeUser,
+            this.editAndRemove});
+            this.userToolStrip.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.userToolStrip.Name = "userToolStrip";
-            this.userToolStrip.Size = new System.Drawing.Size(75, 36);
+            this.userToolStrip.Size = new System.Drawing.Size(62, 29);
             this.userToolStrip.Text = "User";
             // 
             // userList
             // 
             this.userList.Name = "userList";
-            this.userList.Size = new System.Drawing.Size(305, 36);
+            this.userList.Size = new System.Drawing.Size(244, 30);
             this.userList.Text = "User List";
             // 
             // addUserToolStrip
             // 
             this.addUserToolStrip.Name = "addUserToolStrip";
-            this.addUserToolStrip.Size = new System.Drawing.Size(305, 36);
+            this.addUserToolStrip.Size = new System.Drawing.Size(244, 30);
             this.addUserToolStrip.Text = "Add User";
             // 
             // printToolStrip
             // 
             this.printToolStrip.Name = "printToolStrip";
-            this.printToolStrip.Size = new System.Drawing.Size(305, 36);
+            this.printToolStrip.Size = new System.Drawing.Size(244, 30);
             this.printToolStrip.Text = "Print";
             // 
             // mangeUser
             // 
             this.mangeUser.Name = "mangeUser";
-            this.mangeUser.Size = new System.Drawing.Size(305, 36);
+            this.mangeUser.Size = new System.Drawing.Size(244, 30);
             this.mangeUser.Text = "Manage User Form";
+            // 
+            // editAndRemove
+            // 
+            this.editAndRemove.Name = "editAndRemove";
+            this.editAndRemove.Size = new System.Drawing.Size(244, 30);
+            this.editAndRemove.Text = "Edit/Remove";
             // 
             // coursesToolStrip
             // 
@@ -284,16 +288,52 @@ namespace WindowsFormsApp2
             this.editCourse,
             this.manageCourse,
             this.printCourse});
-            this.coursesToolStrip.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.coursesToolStrip.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.coursesToolStrip.Name = "coursesToolStrip";
-            this.coursesToolStrip.Size = new System.Drawing.Size(112, 36);
+            this.coursesToolStrip.Size = new System.Drawing.Size(91, 29);
             this.coursesToolStrip.Text = "Courses";
+            // 
+            // addCourse
+            // 
+            this.addCourse.Name = "addCourse";
+            this.addCourse.Size = new System.Drawing.Size(217, 30);
+            this.addCourse.Text = "Add Course";
+            // 
+            // removeCourse
+            // 
+            this.removeCourse.Name = "removeCourse";
+            this.removeCourse.Size = new System.Drawing.Size(217, 30);
+            this.removeCourse.Text = "Remove Course";
+            // 
+            // editCourse
+            // 
+            this.editCourse.Name = "editCourse";
+            this.editCourse.Size = new System.Drawing.Size(217, 30);
+            this.editCourse.Text = "Edit Course";
+            // 
+            // manageCourse
+            // 
+            this.manageCourse.Name = "manageCourse";
+            this.manageCourse.Size = new System.Drawing.Size(217, 30);
+            this.manageCourse.Text = "Manage Course";
+            // 
+            // printCourse
+            // 
+            this.printCourse.Name = "printCourse";
+            this.printCourse.Size = new System.Drawing.Size(217, 30);
+            this.printCourse.Text = "Print";
             // 
             // sroceToolStrip
             // 
-            this.sroceToolStrip.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sroceToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addScore,
+            this.removeScore,
+            this.manageScore,
+            this.avgScore,
+            this.printResult});
+            this.sroceToolStrip.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.sroceToolStrip.Name = "sroceToolStrip";
-            this.sroceToolStrip.Size = new System.Drawing.Size(87, 36);
+            this.sroceToolStrip.Size = new System.Drawing.Size(71, 29);
             this.sroceToolStrip.Text = "Score";
             // 
             // menuStrip1
@@ -305,52 +345,52 @@ namespace WindowsFormsApp2
             this.sroceToolStrip});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(559, 40);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(419, 31);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.UseWaitCursor = true;
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // addCourse
+            // addScore
             // 
-            this.addCourse.Name = "addCourse";
-            this.addCourse.Size = new System.Drawing.Size(270, 36);
-            this.addCourse.Text = "Add Course";
+            this.addScore.Name = "addScore";
+            this.addScore.Size = new System.Drawing.Size(257, 30);
+            this.addScore.Text = "Add Score";
             // 
-            // RemoveCourse
+            // removeScore
             // 
-            this.removeCourse.Name = "RemoveCourse";
-            this.removeCourse.Size = new System.Drawing.Size(270, 36);
-            this.removeCourse.Text = "Remove Course";
+            this.removeScore.Name = "removeScore";
+            this.removeScore.Size = new System.Drawing.Size(257, 30);
+            this.removeScore.Text = "Remove Score";
             // 
-            // editCourse
+            // manageScore
             // 
-            this.editCourse.Name = "editCourse";
-            this.editCourse.Size = new System.Drawing.Size(270, 36);
-            this.editCourse.Text = "Edit Course";
+            this.manageScore.Name = "manageScore";
+            this.manageScore.Size = new System.Drawing.Size(257, 30);
+            this.manageScore.Text = "Manage Score";
             // 
-            // manageCourse
+            // avgScore
             // 
-            this.manageCourse.Name = "manageCourse";
-            this.manageCourse.Size = new System.Drawing.Size(270, 36);
-            this.manageCourse.Text = "Manage Course";
+            this.avgScore.Name = "avgScore";
+            this.avgScore.Size = new System.Drawing.Size(257, 30);
+            this.avgScore.Text = "Avg Score By Course";
             // 
-            // printCourse
+            // printResult
             // 
-            this.printCourse.Name = "printCourse";
-            this.printCourse.Size = new System.Drawing.Size(270, 36);
-            this.printCourse.Text = "Print";
+            this.printResult.Name = "printResult";
+            this.printResult.Size = new System.Drawing.Size(257, 30);
+            this.printResult.Text = "Print Result";
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 386);
+            this.ClientSize = new System.Drawing.Size(419, 251);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "MainMenu";
             this.Text = "Menu";
             this.UseWaitCursor = true;
@@ -402,5 +442,11 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.ToolStripMenuItem editCourse;
         private System.Windows.Forms.ToolStripMenuItem manageCourse;
         private System.Windows.Forms.ToolStripMenuItem printCourse;
+        private System.Windows.Forms.ToolStripMenuItem editAndRemove;
+        private System.Windows.Forms.ToolStripMenuItem addScore;
+        private System.Windows.Forms.ToolStripMenuItem removeScore;
+        private System.Windows.Forms.ToolStripMenuItem manageScore;
+        private System.Windows.Forms.ToolStripMenuItem avgScore;
+        private System.Windows.Forms.ToolStripMenuItem printResult;
     }
 }

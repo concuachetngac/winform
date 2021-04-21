@@ -2,10 +2,6 @@ H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.csprojAssemblyReference.ca
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.Login.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.MainMenu.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.Register.resources
-H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.User.AddUser.resources
-H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.User.checkUser.resources
-H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.User.UserInfo.resources
-H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.User.UserList.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.csproj.GenerateResource.cache
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.AssemblyInfoInputs.cache
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.AssemblyInfo.cs
@@ -50,3 +46,8 @@ H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.AddCourses
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.EditCourse.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.ManageCourses.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.removeCourse.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.AddUser.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.checkUser.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.ManageUser.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.UserInfo.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.UserList.resources

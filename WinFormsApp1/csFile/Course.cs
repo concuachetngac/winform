@@ -30,12 +30,13 @@ namespace WinFormsApp1
             }
         }
 
-        public bool insertCourse(int id, string label, int period, string des)
+        public bool insertCourse(int id, string label, int period, int semester, string des)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO course (id, label, period, description) VALUES (@id, @label, @period, @des)", mydb.getConnection);
+            SqlCommand command = new SqlCommand("INSERT INTO course (id, label, period, semester, description) VALUES (@id, @label, @period, @semester, @des)", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = id;
             command.Parameters.Add("@label", SqlDbType.NVarChar).Value = label;
             command.Parameters.Add("@period", SqlDbType.Int).Value = period;
+            command.Parameters.Add("@semester", SqlDbType.Int).Value = semester;
             command.Parameters.Add("@des", SqlDbType.Text).Value = des;
 
             mydb.openConnection();
@@ -66,13 +67,14 @@ namespace WinFormsApp1
             return table.Rows.Count <= 0;
 
         }
-        public bool editCourse(int id, string label, string newLabel, int period, string description)
+        public bool editCourse(int id, string label, string newLabel, int period, int semester, string description)
         {
-            SqlCommand cmd = new SqlCommand("UPDATE course SET id = @id, label = @newLabel, period =@period, description = @des WHERE label = @label", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("UPDATE course SET id = @id, label = @newLabel, period =@period, semester=@semester, description = @des WHERE label = @label", mydb.getConnection);
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
             cmd.Parameters.Add("@label", SqlDbType.NVarChar).Value = label;
             cmd.Parameters.Add("@newLabel", SqlDbType.NVarChar).Value = newLabel;
             cmd.Parameters.Add("@period", SqlDbType.Int).Value = period;
+            cmd.Parameters.Add("@semester", SqlDbType.Int).Value = semester;
             cmd.Parameters.Add("@des", SqlDbType.NVarChar).Value = description;
             mydb.openConnection();
             if(cmd.ExecuteNonQuery() > 0)
