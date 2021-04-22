@@ -44,6 +44,8 @@ namespace WinFormsApp1.form.Users
             {
                 availableCourseListBox.Items.Add(table.Rows[i].ItemArray[1]);
             }
+
+            
         }
 
         private void semesterBox_ValueChanged(object sender, EventArgs e)
@@ -95,8 +97,12 @@ namespace WinFormsApp1.form.Users
 
         private void idBox_TextChanged(object sender, EventArgs e)
         {
-            addButton.Enabled = true;          
+            addButton.Enabled = true;
+
+            
+
         }
+
 
         private int getCourseId(string label)
         {

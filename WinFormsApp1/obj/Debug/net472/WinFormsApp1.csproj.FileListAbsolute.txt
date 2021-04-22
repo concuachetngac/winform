@@ -26,10 +26,6 @@ D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.csp
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.Login.resources
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.MainMenu.resources
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Main.Register.resources
-D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.User.AddUser.resources
-D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.User.checkUser.resources
-D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.User.UserInfo.resources
-D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.User.UserList.resources
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.Properties.Resources.resources
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.csproj.GenerateResource.cache
 D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.AssemblyInfoInputs.cache
@@ -52,3 +48,10 @@ H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.ManageUser.reso
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.UserInfo.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.UserList.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.AddCourse.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.AddCourse.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.AddUser.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.checkUser.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.ManageUser.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.UserInfo.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.Users.UserList.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ScoreForm.AddScore.resources

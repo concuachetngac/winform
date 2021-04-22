@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "H:\\winform\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "D:\\resposi\\concuachetngac\\winform\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "H:\\winform\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "D:\\resposi\\concuachetngac\\winform\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\winform\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "D:\\resposi\\concuachetngac\\winform\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "H:\\winform\\WinFormsApp1\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\84398\\.nuget\\packages\\",
-        "outputPath": "H:\\winform\\WinFormsApp1\\obj\\",
+        "projectPath": "D:\\resposi\\concuachetngac\\winform\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+        "outputPath": "D:\\resposi\\concuachetngac\\winform\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\84398\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +57,7 @@
               "version": "[4.8.2, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -45,9 +45,10 @@ namespace WinFormsApp1.form.Users
             // idBox
             // 
             this.idBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.idBox.Location = new System.Drawing.Point(144, 39);
+            this.idBox.Location = new System.Drawing.Point(192, 48);
+            this.idBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.idBox.Name = "idBox";
-            this.idBox.Size = new System.Drawing.Size(100, 27);
+            this.idBox.Size = new System.Drawing.Size(132, 32);
             this.idBox.TabIndex = 1;
             this.idBox.TextChanged += new System.EventHandler(this.idBox_TextChanged);
             // 
@@ -56,10 +57,9 @@ namespace WinFormsApp1.form.Users
             this.userIDLabel.AutoSize = true;
             this.userIDLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.userIDLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userIDLabel.Location = new System.Drawing.Point(60, 35);
-            this.userIDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userIDLabel.Location = new System.Drawing.Point(80, 43);
             this.userIDLabel.Name = "userIDLabel";
-            this.userIDLabel.Size = new System.Drawing.Size(79, 28);
+            this.userIDLabel.Size = new System.Drawing.Size(102, 35);
             this.userIDLabel.TabIndex = 2;
             this.userIDLabel.Text = "User ID:";
             // 
@@ -68,18 +68,17 @@ namespace WinFormsApp1.form.Users
             this.selectSemesterLabel.AutoSize = true;
             this.selectSemesterLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.selectSemesterLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.selectSemesterLabel.Location = new System.Drawing.Point(391, 35);
-            this.selectSemesterLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.selectSemesterLabel.Location = new System.Drawing.Point(521, 43);
             this.selectSemesterLabel.Name = "selectSemesterLabel";
-            this.selectSemesterLabel.Size = new System.Drawing.Size(153, 28);
+            this.selectSemesterLabel.Size = new System.Drawing.Size(194, 35);
             this.selectSemesterLabel.TabIndex = 3;
             this.selectSemesterLabel.Text = "Select Semester:";
             // 
             // semesterBox
             // 
             this.semesterBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.semesterBox.Location = new System.Drawing.Point(557, 39);
-            this.semesterBox.Margin = new System.Windows.Forms.Padding(2);
+            this.semesterBox.Location = new System.Drawing.Point(743, 48);
+            this.semesterBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.semesterBox.Maximum = new decimal(new int[] {
             8,
             0,
@@ -91,7 +90,7 @@ namespace WinFormsApp1.form.Users
             0,
             0});
             this.semesterBox.Name = "semesterBox";
-            this.semesterBox.Size = new System.Drawing.Size(94, 27);
+            this.semesterBox.Size = new System.Drawing.Size(125, 32);
             this.semesterBox.TabIndex = 11;
             this.semesterBox.Value = new decimal(new int[] {
             1,
@@ -104,20 +103,22 @@ namespace WinFormsApp1.form.Users
             // 
             this.availableCourseListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.availableCourseListBox.FormattingEnabled = true;
-            this.availableCourseListBox.ItemHeight = 20;
-            this.availableCourseListBox.Location = new System.Drawing.Point(65, 151);
+            this.availableCourseListBox.ItemHeight = 26;
+            this.availableCourseListBox.Location = new System.Drawing.Point(87, 186);
+            this.availableCourseListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.availableCourseListBox.Name = "availableCourseListBox";
-            this.availableCourseListBox.Size = new System.Drawing.Size(224, 184);
+            this.availableCourseListBox.Size = new System.Drawing.Size(297, 212);
             this.availableCourseListBox.TabIndex = 12;
             // 
             // selectedCourseListBox
             // 
             this.selectedCourseListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.selectedCourseListBox.FormattingEnabled = true;
-            this.selectedCourseListBox.ItemHeight = 20;
-            this.selectedCourseListBox.Location = new System.Drawing.Point(427, 151);
+            this.selectedCourseListBox.ItemHeight = 26;
+            this.selectedCourseListBox.Location = new System.Drawing.Point(569, 186);
+            this.selectedCourseListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectedCourseListBox.Name = "selectedCourseListBox";
-            this.selectedCourseListBox.Size = new System.Drawing.Size(224, 184);
+            this.selectedCourseListBox.Size = new System.Drawing.Size(297, 212);
             this.selectedCourseListBox.TabIndex = 13;
             // 
             // availableCourseLabel
@@ -125,10 +126,9 @@ namespace WinFormsApp1.form.Users
             this.availableCourseLabel.AutoSize = true;
             this.availableCourseLabel.Font = new System.Drawing.Font("Segoe UI", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.availableCourseLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.availableCourseLabel.Location = new System.Drawing.Point(60, 120);
-            this.availableCourseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.availableCourseLabel.Location = new System.Drawing.Point(80, 148);
             this.availableCourseLabel.Name = "availableCourseLabel";
-            this.availableCourseLabel.Size = new System.Drawing.Size(170, 28);
+            this.availableCourseLabel.Size = new System.Drawing.Size(211, 35);
             this.availableCourseLabel.TabIndex = 14;
             this.availableCourseLabel.Text = "Available Course";
             // 
@@ -137,10 +137,9 @@ namespace WinFormsApp1.form.Users
             this.selectedCourseLabel.AutoSize = true;
             this.selectedCourseLabel.Font = new System.Drawing.Font("Segoe UI", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.selectedCourseLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.selectedCourseLabel.Location = new System.Drawing.Point(422, 120);
-            this.selectedCourseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.selectedCourseLabel.Location = new System.Drawing.Point(563, 148);
             this.selectedCourseLabel.Name = "selectedCourseLabel";
-            this.selectedCourseLabel.Size = new System.Drawing.Size(162, 28);
+            this.selectedCourseLabel.Size = new System.Drawing.Size(203, 35);
             this.selectedCourseLabel.TabIndex = 15;
             this.selectedCourseLabel.Text = "Selected Course";
             // 
@@ -149,10 +148,10 @@ namespace WinFormsApp1.form.Users
             this.addButton.BackColor = System.Drawing.Color.Cyan;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addButton.Location = new System.Drawing.Point(307, 171);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addButton.Location = new System.Drawing.Point(409, 210);
+            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(103, 57);
+            this.addButton.Size = new System.Drawing.Size(137, 70);
             this.addButton.TabIndex = 16;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = false;
@@ -163,10 +162,10 @@ namespace WinFormsApp1.form.Users
             this.saveButton.BackColor = System.Drawing.Color.Cyan;
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.saveButton.Location = new System.Drawing.Point(307, 257);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(2);
+            this.saveButton.Location = new System.Drawing.Point(409, 316);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(103, 57);
+            this.saveButton.Size = new System.Drawing.Size(137, 70);
             this.saveButton.TabIndex = 17;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = false;
@@ -174,10 +173,10 @@ namespace WinFormsApp1.form.Users
             // 
             // AddCourse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(700, 364);
+            this.ClientSize = new System.Drawing.Size(933, 448);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.selectedCourseLabel);
@@ -188,6 +187,7 @@ namespace WinFormsApp1.form.Users
             this.Controls.Add(this.selectSemesterLabel);
             this.Controls.Add(this.userIDLabel);
             this.Controls.Add(this.idBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddCourse";
             this.Text = "Add Course";
             this.Load += new System.EventHandler(this.AddCourse_Load);

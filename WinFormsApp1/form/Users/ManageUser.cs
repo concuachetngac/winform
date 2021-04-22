@@ -156,6 +156,7 @@ namespace WinFormsApp1.form.Users
             DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
             imgColumn = (DataGridViewImageColumn)listUserDataGrid.Columns[7];
             imgColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            listUserDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void resetButton_Click(object sender, EventArgs e)
@@ -169,6 +170,39 @@ namespace WinFormsApp1.form.Users
         private void totalUserLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            MY_DB db = new MY_DB();
+            int id = Convert.ToInt32(enterIDBox.Text);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM listUser WHERE Id = @id", db.getConnection);
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            listUserDataGrid.DataSource = user.getStudents(cmd);
+
+            IDBox.Text = listUserDataGrid.CurrentRow.Cells[0].Value.ToString();
+            fnameBox.Text = listUserDataGrid.CurrentRow.Cells[1].Value.ToString();
+            lnameBox.Text = listUserDataGrid.CurrentRow.Cells[2].Value.ToString();
+            birthDate.Value = (DateTime)listUserDataGrid.CurrentRow.Cells[3].Value;
+            if (listUserDataGrid.CurrentRow.Cells[4].Value.ToString().Equals("Female"))
+            {
+                femaleRadio.Checked = true;
+            }
+            else
+            {
+                maleRadio.Checked = true;
+            }
+            phoneNumbBox.Text = listUserDataGrid.CurrentRow.Cells[5].Value.ToString();
+            addressBox.Text = listUserDataGrid.CurrentRow.Cells[6].Value.ToString();
+            byte[] pic;
+            pic = (byte[])listUserDataGrid.CurrentRow.Cells[7].Value;
+            MemoryStream picture = new MemoryStream(pic);
+            pictureBox.Image = Image.FromStream(picture);
+
+            totalUserLabel.Text = "Total User: " + user.getStudents(cmd).Rows.Count.ToString();
+            DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
+            imgColumn = (DataGridViewImageColumn)listUserDataGrid.Columns[7];
+            imgColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
         }
     }
 }
