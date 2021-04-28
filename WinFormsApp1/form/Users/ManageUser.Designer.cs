@@ -69,10 +69,9 @@ namespace WinFormsApp1.form.Users
             this.IDlabel.BackColor = System.Drawing.SystemColors.Highlight;
             this.IDlabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.IDlabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.IDlabel.Location = new System.Drawing.Point(45, 25);
-            this.IDlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.IDlabel.Location = new System.Drawing.Point(60, 31);
             this.IDlabel.Name = "IDlabel";
-            this.IDlabel.Size = new System.Drawing.Size(35, 28);
+            this.IDlabel.Size = new System.Drawing.Size(45, 35);
             this.IDlabel.TabIndex = 1;
             this.IDlabel.Text = "ID:";
             // 
@@ -81,10 +80,9 @@ namespace WinFormsApp1.form.Users
             this.fnameLabel.AutoSize = true;
             this.fnameLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.fnameLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.fnameLabel.Location = new System.Drawing.Point(45, 68);
-            this.fnameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fnameLabel.Location = new System.Drawing.Point(60, 84);
             this.fnameLabel.Name = "fnameLabel";
-            this.fnameLabel.Size = new System.Drawing.Size(110, 28);
+            this.fnameLabel.Size = new System.Drawing.Size(140, 35);
             this.fnameLabel.TabIndex = 2;
             this.fnameLabel.Text = "First Name:";
             // 
@@ -93,10 +91,9 @@ namespace WinFormsApp1.form.Users
             this.lnameLabel.AutoSize = true;
             this.lnameLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.lnameLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lnameLabel.Location = new System.Drawing.Point(45, 118);
-            this.lnameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnameLabel.Location = new System.Drawing.Point(60, 145);
             this.lnameLabel.Name = "lnameLabel";
-            this.lnameLabel.Size = new System.Drawing.Size(107, 28);
+            this.lnameLabel.Size = new System.Drawing.Size(138, 35);
             this.lnameLabel.TabIndex = 3;
             this.lnameLabel.Text = "Last Name:";
             // 
@@ -105,10 +102,9 @@ namespace WinFormsApp1.form.Users
             this.phoneLabel.AutoSize = true;
             this.phoneLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.phoneLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.phoneLabel.Location = new System.Drawing.Point(45, 171);
-            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.phoneLabel.Location = new System.Drawing.Point(60, 210);
             this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(71, 28);
+            this.phoneLabel.Size = new System.Drawing.Size(90, 35);
             this.phoneLabel.TabIndex = 4;
             this.phoneLabel.Text = "Phone:";
             // 
@@ -117,10 +113,9 @@ namespace WinFormsApp1.form.Users
             this.genderLabel.AutoSize = true;
             this.genderLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.genderLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.genderLabel.Location = new System.Drawing.Point(45, 216);
-            this.genderLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.genderLabel.Location = new System.Drawing.Point(60, 266);
             this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(80, 28);
+            this.genderLabel.Size = new System.Drawing.Size(101, 35);
             this.genderLabel.TabIndex = 5;
             this.genderLabel.Text = "Gender:";
             // 
@@ -128,11 +123,11 @@ namespace WinFormsApp1.form.Users
             // 
             this.genderGroupBox.Controls.Add(this.femaleRadio);
             this.genderGroupBox.Controls.Add(this.maleRadio);
-            this.genderGroupBox.Location = new System.Drawing.Point(50, 266);
-            this.genderGroupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.genderGroupBox.Location = new System.Drawing.Point(67, 327);
+            this.genderGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.genderGroupBox.Name = "genderGroupBox";
-            this.genderGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.genderGroupBox.Size = new System.Drawing.Size(289, 69);
+            this.genderGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.genderGroupBox.Size = new System.Drawing.Size(385, 85);
             this.genderGroupBox.TabIndex = 6;
             this.genderGroupBox.TabStop = false;
             // 
@@ -141,10 +136,10 @@ namespace WinFormsApp1.form.Users
             this.femaleRadio.AutoSize = true;
             this.femaleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.femaleRadio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.femaleRadio.Location = new System.Drawing.Point(193, 17);
-            this.femaleRadio.Margin = new System.Windows.Forms.Padding(2);
+            this.femaleRadio.Location = new System.Drawing.Point(257, 21);
+            this.femaleRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.femaleRadio.Name = "femaleRadio";
-            this.femaleRadio.Size = new System.Drawing.Size(92, 32);
+            this.femaleRadio.Size = new System.Drawing.Size(115, 39);
             this.femaleRadio.TabIndex = 6;
             this.femaleRadio.TabStop = true;
             this.femaleRadio.Text = "Female";
@@ -155,10 +150,10 @@ namespace WinFormsApp1.form.Users
             this.maleRadio.AutoSize = true;
             this.maleRadio.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.maleRadio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.maleRadio.Location = new System.Drawing.Point(29, 17);
-            this.maleRadio.Margin = new System.Windows.Forms.Padding(2);
+            this.maleRadio.Location = new System.Drawing.Point(39, 21);
+            this.maleRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.maleRadio.Name = "maleRadio";
-            this.maleRadio.Size = new System.Drawing.Size(73, 32);
+            this.maleRadio.Size = new System.Drawing.Size(90, 39);
             this.maleRadio.TabIndex = 5;
             this.maleRadio.TabStop = true;
             this.maleRadio.Text = "Male";
@@ -169,10 +164,9 @@ namespace WinFormsApp1.form.Users
             this.birthDateLabel.AutoSize = true;
             this.birthDateLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.birthDateLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.birthDateLabel.Location = new System.Drawing.Point(45, 359);
-            this.birthDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.birthDateLabel.Location = new System.Drawing.Point(60, 442);
             this.birthDateLabel.Name = "birthDateLabel";
-            this.birthDateLabel.Size = new System.Drawing.Size(98, 28);
+            this.birthDateLabel.Size = new System.Drawing.Size(123, 35);
             this.birthDateLabel.TabIndex = 7;
             this.birthDateLabel.Text = "BirthDate:";
             // 
@@ -181,10 +175,9 @@ namespace WinFormsApp1.form.Users
             this.addressLabel.AutoSize = true;
             this.addressLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.addressLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addressLabel.Location = new System.Drawing.Point(45, 410);
-            this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.addressLabel.Location = new System.Drawing.Point(60, 505);
             this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(86, 28);
+            this.addressLabel.Size = new System.Drawing.Size(110, 35);
             this.addressLabel.TabIndex = 8;
             this.addressLabel.Text = "Address:";
             // 
@@ -193,71 +186,70 @@ namespace WinFormsApp1.form.Users
             this.picLabel.AutoSize = true;
             this.picLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.picLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.picLabel.Location = new System.Drawing.Point(45, 491);
-            this.picLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.picLabel.Location = new System.Drawing.Point(60, 604);
             this.picLabel.Name = "picLabel";
-            this.picLabel.Size = new System.Drawing.Size(76, 28);
+            this.picLabel.Size = new System.Drawing.Size(96, 35);
             this.picLabel.TabIndex = 9;
             this.picLabel.Text = "Picture:";
             // 
             // IDBox
             // 
-            this.IDBox.Location = new System.Drawing.Point(162, 33);
-            this.IDBox.Margin = new System.Windows.Forms.Padding(2);
+            this.IDBox.Location = new System.Drawing.Point(216, 41);
+            this.IDBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IDBox.Name = "IDBox";
-            this.IDBox.Size = new System.Drawing.Size(177, 20);
+            this.IDBox.Size = new System.Drawing.Size(235, 22);
             this.IDBox.TabIndex = 10;
             // 
             // fnameBox
             // 
             this.fnameBox.AccessibleName = "";
-            this.fnameBox.Location = new System.Drawing.Point(162, 77);
-            this.fnameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.fnameBox.Location = new System.Drawing.Point(216, 95);
+            this.fnameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fnameBox.Name = "fnameBox";
-            this.fnameBox.Size = new System.Drawing.Size(177, 20);
+            this.fnameBox.Size = new System.Drawing.Size(235, 22);
             this.fnameBox.TabIndex = 11;
             // 
             // lnameBox
             // 
-            this.lnameBox.Location = new System.Drawing.Point(162, 127);
-            this.lnameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lnameBox.Location = new System.Drawing.Point(216, 156);
+            this.lnameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lnameBox.Name = "lnameBox";
-            this.lnameBox.Size = new System.Drawing.Size(177, 20);
+            this.lnameBox.Size = new System.Drawing.Size(235, 22);
             this.lnameBox.TabIndex = 12;
             // 
             // birthDate
             // 
             this.birthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.birthDate.Location = new System.Drawing.Point(162, 365);
-            this.birthDate.Margin = new System.Windows.Forms.Padding(2);
+            this.birthDate.Location = new System.Drawing.Point(216, 449);
+            this.birthDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.birthDate.Name = "birthDate";
-            this.birthDate.Size = new System.Drawing.Size(177, 20);
+            this.birthDate.Size = new System.Drawing.Size(235, 22);
             this.birthDate.TabIndex = 13;
             // 
             // phoneNumbBox
             // 
-            this.phoneNumbBox.Location = new System.Drawing.Point(162, 180);
-            this.phoneNumbBox.Margin = new System.Windows.Forms.Padding(2);
+            this.phoneNumbBox.Location = new System.Drawing.Point(216, 222);
+            this.phoneNumbBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.phoneNumbBox.Name = "phoneNumbBox";
-            this.phoneNumbBox.Size = new System.Drawing.Size(177, 20);
+            this.phoneNumbBox.Size = new System.Drawing.Size(235, 22);
             this.phoneNumbBox.TabIndex = 14;
             // 
             // addressBox
             // 
-            this.addressBox.Location = new System.Drawing.Point(162, 419);
-            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Location = new System.Drawing.Point(216, 516);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addressBox.Multiline = true;
             this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(177, 53);
+            this.addressBox.Size = new System.Drawing.Size(235, 64);
             this.addressBox.TabIndex = 15;
             // 
             // pictureBox
             // 
             this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox.Location = new System.Drawing.Point(162, 491);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.pictureBox.Location = new System.Drawing.Point(216, 604);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 0);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(177, 169);
+            this.pictureBox.Size = new System.Drawing.Size(236, 208);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 16;
             this.pictureBox.TabStop = false;
@@ -266,10 +258,10 @@ namespace WinFormsApp1.form.Users
             // 
             this.uploadPic.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uploadPic.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.uploadPic.Location = new System.Drawing.Point(162, 660);
-            this.uploadPic.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+            this.uploadPic.Location = new System.Drawing.Point(216, 812);
+            this.uploadPic.Margin = new System.Windows.Forms.Padding(3, 0, 3, 2);
             this.uploadPic.Name = "uploadPic";
-            this.uploadPic.Size = new System.Drawing.Size(88, 26);
+            this.uploadPic.Size = new System.Drawing.Size(117, 32);
             this.uploadPic.TabIndex = 17;
             this.uploadPic.Text = "Upload Picture";
             this.uploadPic.UseVisualStyleBackColor = true;
@@ -280,10 +272,10 @@ namespace WinFormsApp1.form.Users
             this.addButton.BackColor = System.Drawing.Color.Cyan;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addButton.Location = new System.Drawing.Point(49, 721);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addButton.Location = new System.Drawing.Point(65, 887);
+            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(103, 40);
+            this.addButton.Size = new System.Drawing.Size(137, 49);
             this.addButton.TabIndex = 18;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = false;
@@ -294,10 +286,10 @@ namespace WinFormsApp1.form.Users
             this.editButton.BackColor = System.Drawing.Color.Lime;
             this.editButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.editButton.Location = new System.Drawing.Point(190, 721);
-            this.editButton.Margin = new System.Windows.Forms.Padding(2);
+            this.editButton.Location = new System.Drawing.Point(253, 887);
+            this.editButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(103, 40);
+            this.editButton.Size = new System.Drawing.Size(137, 49);
             this.editButton.TabIndex = 19;
             this.editButton.Text = "Edit";
             this.editButton.UseVisualStyleBackColor = false;
@@ -308,10 +300,10 @@ namespace WinFormsApp1.form.Users
             this.removeButton.BackColor = System.Drawing.Color.Red;
             this.removeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.removeButton.Location = new System.Drawing.Point(329, 721);
-            this.removeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.removeButton.Location = new System.Drawing.Point(439, 887);
+            this.removeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(103, 40);
+            this.removeButton.Size = new System.Drawing.Size(137, 49);
             this.removeButton.TabIndex = 20;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = false;
@@ -322,10 +314,10 @@ namespace WinFormsApp1.form.Users
             this.resetButton.BackColor = System.Drawing.Color.DarkOrange;
             this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.resetButton.Location = new System.Drawing.Point(475, 721);
-            this.resetButton.Margin = new System.Windows.Forms.Padding(2);
+            this.resetButton.Location = new System.Drawing.Point(633, 887);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(103, 40);
+            this.resetButton.Size = new System.Drawing.Size(137, 49);
             this.resetButton.TabIndex = 21;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = false;
@@ -335,10 +327,10 @@ namespace WinFormsApp1.form.Users
             // 
             this.downloadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.downloadButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.downloadButton.Location = new System.Drawing.Point(251, 660);
-            this.downloadButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+            this.downloadButton.Location = new System.Drawing.Point(335, 812);
+            this.downloadButton.Margin = new System.Windows.Forms.Padding(3, 0, 3, 2);
             this.downloadButton.Name = "downloadButton";
-            this.downloadButton.Size = new System.Drawing.Size(88, 26);
+            this.downloadButton.Size = new System.Drawing.Size(117, 32);
             this.downloadButton.TabIndex = 22;
             this.downloadButton.Text = "Download";
             this.downloadButton.UseVisualStyleBackColor = true;
@@ -346,11 +338,12 @@ namespace WinFormsApp1.form.Users
             // listUserDataGrid
             // 
             this.listUserDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listUserDataGrid.Location = new System.Drawing.Point(376, 68);
-            this.listUserDataGrid.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.listUserDataGrid.Location = new System.Drawing.Point(501, 84);
+            this.listUserDataGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 0);
             this.listUserDataGrid.Name = "listUserDataGrid";
+            this.listUserDataGrid.RowHeadersWidth = 51;
             this.listUserDataGrid.RowTemplate.Height = 100;
-            this.listUserDataGrid.Size = new System.Drawing.Size(943, 618);
+            this.listUserDataGrid.Size = new System.Drawing.Size(1257, 761);
             this.listUserDataGrid.TabIndex = 23;
             this.listUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listUserDataGrid_CellContentClick);
             // 
@@ -360,11 +353,11 @@ namespace WinFormsApp1.form.Users
             this.totalUserLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.totalUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalUserLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.totalUserLabel.Location = new System.Drawing.Point(1157, 686);
+            this.totalUserLabel.Location = new System.Drawing.Point(1543, 844);
             this.totalUserLabel.Margin = new System.Windows.Forms.Padding(0);
             this.totalUserLabel.Name = "totalUserLabel";
-            this.totalUserLabel.Padding = new System.Windows.Forms.Padding(19, 8, 19, 8);
-            this.totalUserLabel.Size = new System.Drawing.Size(172, 41);
+            this.totalUserLabel.Padding = new System.Windows.Forms.Padding(25, 10, 25, 10);
+            this.totalUserLabel.Size = new System.Drawing.Size(220, 49);
             this.totalUserLabel.TabIndex = 24;
             this.totalUserLabel.Text = "Total Users: 1";
             this.totalUserLabel.Click += new System.EventHandler(this.totalUserLabel_Click);
@@ -375,20 +368,19 @@ namespace WinFormsApp1.form.Users
             this.enterLabel.BackColor = System.Drawing.SystemColors.Highlight;
             this.enterLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.enterLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.enterLabel.Location = new System.Drawing.Point(601, 24);
-            this.enterLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.enterLabel.Location = new System.Drawing.Point(801, 30);
             this.enterLabel.Name = "enterLabel";
-            this.enterLabel.Size = new System.Drawing.Size(173, 28);
+            this.enterLabel.Size = new System.Drawing.Size(223, 35);
             this.enterLabel.TabIndex = 25;
             this.enterLabel.Text = "Enter ID To Search:";
             // 
             // enterIDBox
             // 
             this.enterIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.enterIDBox.Location = new System.Drawing.Point(792, 26);
-            this.enterIDBox.Margin = new System.Windows.Forms.Padding(2);
+            this.enterIDBox.Location = new System.Drawing.Point(1056, 32);
+            this.enterIDBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.enterIDBox.Name = "enterIDBox";
-            this.enterIDBox.Size = new System.Drawing.Size(232, 27);
+            this.enterIDBox.Size = new System.Drawing.Size(308, 32);
             this.enterIDBox.TabIndex = 26;
             // 
             // searchButton
@@ -396,20 +388,21 @@ namespace WinFormsApp1.form.Users
             this.searchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.searchButton.Location = new System.Drawing.Point(1018, 26);
-            this.searchButton.Margin = new System.Windows.Forms.Padding(2);
+            this.searchButton.Location = new System.Drawing.Point(1357, 32);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(103, 28);
+            this.searchButton.Size = new System.Drawing.Size(137, 34);
             this.searchButton.TabIndex = 27;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // ManageUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(1335, 781);
+            this.ClientSize = new System.Drawing.Size(1780, 961);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.enterIDBox);
             this.Controls.Add(this.enterLabel);
@@ -438,6 +431,7 @@ namespace WinFormsApp1.form.Users
             this.Controls.Add(this.fnameLabel);
             this.Controls.Add(this.IDlabel);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ManageUser";
             this.Text = "Manage User";
             this.Load += new System.EventHandler(this.ManageUser_Load);

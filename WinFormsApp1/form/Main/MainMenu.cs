@@ -12,6 +12,7 @@ using WinFormsApp1;
 using WinFormsApp1.form;
 using WinFormsApp1.form.CourseForm;
 using WinFormsApp1.form.Users;
+using WinFormsApp1.form.ScoreForm;
 
 namespace WindowsFormsApp2
 {
@@ -32,7 +33,9 @@ namespace WindowsFormsApp2
             removeCourse.Click += removeCourse_ItemClicked;
             editCourse.Click += editCourse_ItemClicked;
             manageCourse.Click += manageCourse_ItemClicked;
-            
+
+            //Score dropdown Item
+            addScore.Click += addScore_ItemClicked;
         }
 
         private void addUserStrip_ItemClicked(object sender, EventArgs e)
@@ -97,6 +100,10 @@ namespace WindowsFormsApp2
             manage.Show();
         }
 
-
+        private void addScore_ItemClicked(object sender, EventArgs e)
+        {
+            AddScore addScore = new AddScore();
+            addScore.Show();
+        }
     }
 }

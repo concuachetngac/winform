@@ -12,19 +12,19 @@ namespace WindowsFormsApp2
         MY_DB mydb = new MY_DB();
         public bool insertUser(int Id, string fname, string lname, DateTime birthDate, string gender, int phone, string address, MemoryStream picture)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO listUser (id, fname, lname, birthdate, gender, phone, picture, address) VALUES (@id, @fname, @lname, @birthdate, @gender, @phone, @picture, @address)", mydb.getConnection);
-            command.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = Id;
-            command.Parameters.Add("@fname", System.Data.SqlDbType.NVarChar).Value = fname;
-            command.Parameters.Add("@lname", System.Data.SqlDbType.NVarChar).Value = lname;
-            command.Parameters.Add("@birthdate", System.Data.SqlDbType.DateTime).Value = birthDate;
-            command.Parameters.Add("@gender", System.Data.SqlDbType.NVarChar).Value = gender;
-            command.Parameters.Add("@phone", System.Data.SqlDbType.Int).Value = phone;
-            command.Parameters.Add("@address", System.Data.SqlDbType.NVarChar).Value = address;
-            command.Parameters.Add("@picture", System.Data.SqlDbType.Image).Value = picture.ToArray();
+            SqlCommand cmd = new SqlCommand("INSERT INTO listUser (id, fname, lname, birthdate, gender, phone, picture, address) VALUES (@id, @fname, @lname, @birthdate, @gender, @phone, @picture, @address)", mydb.getConnection);
+            cmd.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = Id;
+            cmd.Parameters.Add("@fname", System.Data.SqlDbType.NVarChar).Value = fname;
+            cmd.Parameters.Add("@lname", System.Data.SqlDbType.NVarChar).Value = lname;
+            cmd.Parameters.Add("@birthdate", System.Data.SqlDbType.DateTime).Value = birthDate;
+            cmd.Parameters.Add("@gender", System.Data.SqlDbType.NVarChar).Value = gender;
+            cmd.Parameters.Add("@phone", System.Data.SqlDbType.Int).Value = phone;
+            cmd.Parameters.Add("@address", System.Data.SqlDbType.NVarChar).Value = address;
+            cmd.Parameters.Add("@picture", System.Data.SqlDbType.Image).Value = picture.ToArray();
 
             mydb.openConnection();
 
-            if((command.ExecuteNonQuery() == 1))
+            if((cmd.ExecuteNonQuery() == 1))
             {
                 mydb.closeConnection();
                 return true;
@@ -45,10 +45,10 @@ namespace WindowsFormsApp2
         }
         public bool deleteUser(int id)
         {
-            SqlCommand command = new SqlCommand("DELETE FROM listUser WHERE Id = @id", mydb.getConnection);
-            command.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
+            SqlCommand cmd = new SqlCommand("DELETE FROM listUser WHERE Id = @id", mydb.getConnection);
+            cmd.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
             mydb.openConnection();
-            if((command.ExecuteNonQuery() == 1))
+            if((cmd.ExecuteNonQuery() == 1))
             {
                 mydb.closeConnection();
                 return true;
@@ -109,6 +109,17 @@ namespace WindowsFormsApp2
                 mydb.closeConnection();
                 return false;
             }
+        }
+
+        public DataTable getSelectedcourse(int studentID)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT course_id FROM score WHERE student_id = @student_id", mydb.getConnection);
+            cmd.Parameters.Add("@student_id", SqlDbType.Int).Value = studentID;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            return table;
         }
     }
 }

@@ -32,10 +32,10 @@ namespace WindowsFormsApp2
             dataGridViewUserList.Columns[5].HeaderText = "Phone Number";
             dataGridViewUserList.Columns[6].HeaderText = "Address";
             dataGridViewUserList.Columns[7].HeaderText = "Picture";
-            
 
-            
-            
+            dataGridViewUserList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+
 
         }
 

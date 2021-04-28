@@ -106,6 +106,7 @@ namespace WinFormsApp1
             getTable(command);
             toPrinterButton.Click += ToPrinterBtn_Click;
             checkButton.Click += CheckBtn_Click;
+            dataGridViewCheckUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         public void ExportDataToWord(DataGridView DGV, string filename)
