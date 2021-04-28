@@ -96,6 +96,15 @@ namespace WinFormsApp1
             adpt.Fill(table);
             return table;
         }
+        public DataTable getAllCoursesInfo()
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM course", mydb.getConnection);
+            DataTable table = new DataTable();
+            SqlDataAdapter adpt = new SqlDataAdapter();
+            adpt.SelectCommand = cmd;
+            adpt.Fill(table);
+            return table;
+        }
         public int getCourseId(string label)
         {
             MY_DB mydb = new MY_DB();

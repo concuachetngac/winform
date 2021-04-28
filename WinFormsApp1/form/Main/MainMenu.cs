@@ -14,6 +14,7 @@ using WinFormsApp1.form.CourseForm;
 using WinFormsApp1.form.Users;
 using WinFormsApp1.form.ScoreForm;
 
+
 namespace WindowsFormsApp2
 {
     public partial class MainMenu : Form
@@ -24,7 +25,7 @@ namespace WindowsFormsApp2
             //User dropdown Item
             addUserToolStrip.Click += addUserStrip_ItemClicked;
             userList.Click += userList_ItemClicked;
-            printToolStrip.Click += print_ItemClicked;
+            printToolStrip.Click += printUser_ItemClicked;
             editAndRemove.Click += editAndRemove_ItemClicked;
             mangeUser.Click += manageUser_ItemClicked;
 
@@ -33,9 +34,12 @@ namespace WindowsFormsApp2
             removeCourse.Click += removeCourse_ItemClicked;
             editCourse.Click += editCourse_ItemClicked;
             manageCourse.Click += manageCourse_ItemClicked;
+            printCourse.Click += printCourse_ItemClicked;
 
             //Score dropdown Item
             addScore.Click += addScore_ItemClicked;
+            avgScore.Click += avgScore_ItemClicked;
+            
         }
 
         private void addUserStrip_ItemClicked(object sender, EventArgs e)
@@ -60,7 +64,7 @@ namespace WindowsFormsApp2
             UserList userList = new UserList();
             userList.Show();
         }
-        private void print_ItemClicked(object sender, EventArgs e)
+        private void printUser_ItemClicked(object sender, EventArgs e)
         {
             CheckUser printSave = new CheckUser();
             printSave.Show();
@@ -104,6 +108,17 @@ namespace WindowsFormsApp2
         {
             AddScore addScore = new AddScore();
             addScore.Show();
+        }
+
+        private void printCourse_ItemClicked(object sender, EventArgs e)
+        {
+            Print print = new Print();
+            print.Show();
+        }
+        private void avgScore_ItemClicked(object sender, EventArgs e)
+        {
+            AverageGrade avg = new AverageGrade();
+            avg.Show();
         }
     }
 }

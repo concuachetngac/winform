@@ -16,10 +16,10 @@ namespace WinFormsApp1.csFile
     {
         MY_DB mydb = new MY_DB();
 
-        public bool addScore(int stdID, int courseID, int score, string description)
+        public bool addScore(int stdID, int courseID, float score, string description)
         {
-            SqlCommand cmd = new SqlCommand("UPDATE score SET student_score = @score, description = @des WHERE student_id = @std_id, course_id = @course_id", mydb.getConnection);
-            cmd.Parameters.Add("@score", SqlDbType.Int).Value = score;
+            SqlCommand cmd = new SqlCommand("UPDATE score SET student_score = @score, description = @des WHERE student_id = @std_id AND course_id = @course_id", mydb.getConnection);
+            cmd.Parameters.Add("@score", SqlDbType.Float).Value = score;
             cmd.Parameters.Add("@std_id", SqlDbType.Int).Value = stdID;
             cmd.Parameters.Add("@course_id", SqlDbType.Int).Value = courseID;
             cmd.Parameters.Add("@des", SqlDbType.NVarChar).Value = description;
