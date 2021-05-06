@@ -14,6 +14,7 @@ namespace WinFormsApp1.form.Users
 {
     public partial class AddCourse : Form
     {
+        Course course = new Course();
         public AddCourse()
         {
             InitializeComponent();
@@ -30,22 +31,41 @@ namespace WinFormsApp1.form.Users
         private void availableCourseRefresh()
         {
             availableCourseListBox.Items.Clear();
+
+            User user = new User();
             MY_DB mydb = new MY_DB();
+
             SqlCommand cmd = new SqlCommand("SELECT * FROM course WHERE semester=@semester", mydb.getConnection);          
             cmd.Parameters.Add("@semester", SqlDbType.Int).Value = semesterBox.Value;
-            DataTable table = new DataTable();
+            DataTable allCourseTable = new DataTable();
             SqlDataAdapter adpt = new SqlDataAdapter();
             adpt.SelectCommand = cmd;
-            adpt.Fill(table);
+            adpt.Fill(allCourseTable);
 
-            
-        
-            for (int i = 0; i < table.Rows.Count; i++)
+            DataTable selectedCourseTable = new DataTable();
+            try
             {
-                availableCourseListBox.Items.Add(table.Rows[i].ItemArray[1]);
-            }
+                selectedCourseTable = user.getSelectedcourse(Convert.ToInt32(idBox.Text));
+                for (int i = 0; i < allCourseTable.Rows.Count; i++)
+                {
+                    int count = 0;
+                    //if Selected Course == All Course count increase
+                    for (int j = 0; j < selectedCourseTable.Rows.Count; j++)
+                    {
+                        if (allCourseTable.Rows[i].ItemArray[0].ToString() == selectedCourseTable.Rows[j].ItemArray[0].ToString())
+                        {
+                            count++;
+                        } 
+                    }
+                    if(count == 0)
+                    {
+                        availableCourseListBox.Items.Add(allCourseTable.Rows[i].ItemArray[1].ToString());
+                    }
+                }
+            } catch
+            {
 
-            
+            }     
         }
 
         private void semesterBox_ValueChanged(object sender, EventArgs e)
@@ -80,7 +100,7 @@ namespace WinFormsApp1.form.Users
             {
                 for (int i = 0; i < selectedCourseListBox.Items.Count; i++)
                 {
-                    int courseID = getCourseId(selectedCourseListBox.Items[i].ToString());
+                    int courseID = course.getCourseId(selectedCourseListBox.Items[i].ToString());
                     if (user.addCourse(Convert.ToInt32(idBox.Text), courseID, 0, ""))
                     {
                         MessageBox.Show("Saved " + selectedCourseListBox.Items[i].ToString());
@@ -93,28 +113,20 @@ namespace WinFormsApp1.form.Users
                 MessageBox.Show("This ID is not available!!!", "Error");
                 mydb.closeConnection();
             }
+            if (user.selectedCourse(Convert.ToInt32(idBox.Text)))
+            {
+                
+            }
+
         }
 
         private void idBox_TextChanged(object sender, EventArgs e)
         {
             addButton.Enabled = true;
-
-            
-
+            availableCourseRefresh();
         }
 
 
-        private int getCourseId(string label)
-        {
-            MY_DB mydb = new MY_DB();
-            SqlCommand cmd = new SqlCommand("SELECT Id FROM course WHERE label=@label", mydb.getConnection);
-            cmd.Parameters.Add("@label", SqlDbType.NVarChar).Value = label;
-            DataTable table = new DataTable();
-            SqlDataAdapter adpt = new SqlDataAdapter();
-            adpt.SelectCommand = cmd;
-            adpt.Fill(table);
-
-            return Convert.ToInt32(table.Rows[0].ItemArray[0]);
-        }
+        
     }
 }

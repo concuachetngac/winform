@@ -96,6 +96,40 @@ namespace WinFormsApp1
             adpt.Fill(table);
             return table;
         }
-   
+        public DataTable getAllCoursesInfo()
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM course", mydb.getConnection);
+            DataTable table = new DataTable();
+            SqlDataAdapter adpt = new SqlDataAdapter();
+            adpt.SelectCommand = cmd;
+            adpt.Fill(table);
+            return table;
+        }
+        public int getCourseId(string label)
+        {
+            MY_DB mydb = new MY_DB();
+            SqlCommand cmd = new SqlCommand("SELECT Id FROM course WHERE label=@label", mydb.getConnection);
+            cmd.Parameters.Add("@label", SqlDbType.NVarChar).Value = label;
+            DataTable table = new DataTable();
+            SqlDataAdapter adpt = new SqlDataAdapter();
+            adpt.SelectCommand = cmd;
+            adpt.Fill(table);
+
+            return Convert.ToInt32(table.Rows[0].ItemArray[0]);
+        }
+
+        public string getCourseLabel(int courseID)
+        {
+            MY_DB mydb = new MY_DB();
+            SqlCommand cmd = new SqlCommand("SELECT label FROM course WHERE id=@id", mydb.getConnection);
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = courseID;
+            DataTable table = new DataTable();
+            SqlDataAdapter adpt = new SqlDataAdapter();
+            adpt.SelectCommand = cmd;
+            adpt.Fill(table);
+
+            return table.Rows[0].ItemArray[0].ToString();
+        }
+
     }
 }
