@@ -80,5 +80,10 @@ namespace WinFormsApp1.form.ScoreForm
             }
 
         }
+
+        private void listUserDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            IDBox.Text = listUserDataGrid.CurrentCell.Value.ToString();
+        }
     }
 }

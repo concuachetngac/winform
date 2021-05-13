@@ -13,7 +13,7 @@ using WinFormsApp1.form;
 using WinFormsApp1.form.CourseForm;
 using WinFormsApp1.form.Users;
 using WinFormsApp1.form.ScoreForm;
-
+using WinFormsApp1.form.ResultForm;
 
 namespace WindowsFormsApp2
 {
@@ -39,7 +39,10 @@ namespace WindowsFormsApp2
             //Score dropdown Item
             addScore.Click += addScore_ItemClicked;
             avgScore.Click += avgScore_ItemClicked;
-            
+            manageScore.Click += manageScore_ItemClicked;
+
+            //Result dropdown Item
+            avgResultToolStrip.Click += avgResult_ItemClicked;
         }
 
         private void addUserStrip_ItemClicked(object sender, EventArgs e)
@@ -119,6 +122,18 @@ namespace WindowsFormsApp2
         {
             AverageGrade avg = new AverageGrade();
             avg.Show();
+        }
+
+        private void manageScore_ItemClicked(object sender, EventArgs e)
+        {
+            ManageScore manage = new ManageScore();
+            manage.Show();
+        }
+
+        private void avgResult_ItemClicked(object sender, EventArgs e)
+        {
+            AvgResult result = new AvgResult();
+            result.Show();
         }
     }
 }

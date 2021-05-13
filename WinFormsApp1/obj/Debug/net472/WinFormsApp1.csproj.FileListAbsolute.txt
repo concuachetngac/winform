@@ -58,3 +58,7 @@ D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.for
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ScoreForm.AddScore.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.Print.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ScoreForm.AverageGrade.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.Print.resources
+D:\resposi\concuachetngac\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ScoreForm.AverageGrade.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ScoreForm.ManageScore.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ResultForm.AvgResult.resources

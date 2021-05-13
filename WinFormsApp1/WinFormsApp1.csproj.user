@@ -11,10 +11,16 @@
     <Compile Update="form\CourseForm\Print.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="form\ResultForm\AvgResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="form\ScoreForm\AddScore.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="form\ScoreForm\AverageGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\ScoreForm\ManageScore.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="form\Users\AddCourse.cs">

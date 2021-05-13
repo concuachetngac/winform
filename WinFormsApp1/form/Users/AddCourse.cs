@@ -113,6 +113,11 @@ namespace WinFormsApp1.form.Users
                 MessageBox.Show("This ID is not available!!!", "Error");
                 mydb.closeConnection();
             }
+            if (user.selectedCourse(Convert.ToInt32(idBox.Text)))
+            {
+                
+            }
+
         }
 
         private void idBox_TextChanged(object sender, EventArgs e)

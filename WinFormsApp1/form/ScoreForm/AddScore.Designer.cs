@@ -147,6 +147,7 @@ namespace WinFormsApp1.form.ScoreForm
             this.listUserDataGrid.RowTemplate.Height = 24;
             this.listUserDataGrid.Size = new System.Drawing.Size(309, 303);
             this.listUserDataGrid.TabIndex = 19;
+            this.listUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listUserDataGrid_CellContentClick);
             // 
             // coursesBox
             // 

@@ -4,6 +4,7 @@ using System.Text;
 using System.Data.SqlClient;
 using System.IO;
 using System.Data;
+using WinFormsApp1;
 
 namespace WindowsFormsApp2
 {
@@ -120,6 +121,53 @@ namespace WindowsFormsApp2
             adapter.Fill(table);
 
             return table;
+        }
+
+        public bool selectedCourse(int id)
+        {
+            Course course = new Course();
+            string selectedCourse ="";
+            DataTable table = getSelectedcourse(id);
+
+            for(int i = 0; i < table.Rows.Count - 1; i++)
+            {
+                selectedCourse += course.getCourseLabel(Convert.ToInt32(table.Rows[i].ItemArray[0])) + "\n";
+            }
+            selectedCourse += course.getCourseLabel(Convert.ToInt32(table.Rows[table.Rows.Count - 1].ItemArray[0])) + ". ";
+            SqlCommand cmd = new SqlCommand("UPDATE listUser SET selected_courses = @selected WHERE id=@id", mydb.getConnection);
+            cmd.Parameters.Add("@selected", SqlDbType.NVarChar).Value = selectedCourse;
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            mydb.openConnection();
+
+            if(cmd.ExecuteNonQuery() > 0)
+            {
+                mydb.closeConnection();
+                return true;
+            } else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
+
+        public DataTable getScore(int id)
+        {
+            DataTable table = new DataTable();
+            SqlCommand cmd = new SqlCommand("SELECT course_id, student_score FROM score WHERE student_id = @id", mydb.getConnection);
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            SqlDataAdapter adpt = new SqlDataAdapter(cmd);
+            adpt.Fill(table);
+            return table;
+        }
+
+        public float getAvgScore(int id) 
+        {
+            DataTable table = new DataTable();
+            SqlCommand cmd = new SqlCommand("SELECT AVG(student_score) AS avg FROM score WHERE student_id = @id", mydb.getConnection);
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            SqlDataAdapter adpt = new SqlDataAdapter(cmd);
+            adpt.Fill(table);
+            return float.Parse(table.Rows[0][0].ToString());
         }
     }
 }

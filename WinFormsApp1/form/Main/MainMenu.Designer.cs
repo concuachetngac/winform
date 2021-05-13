@@ -67,12 +67,15 @@ namespace WindowsFormsApp2
             this.manageCourse = new System.Windows.Forms.ToolStripMenuItem();
             this.printCourse = new System.Windows.Forms.ToolStripMenuItem();
             this.sroceToolStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addScore = new System.Windows.Forms.ToolStripMenuItem();
             this.removeScore = new System.Windows.Forms.ToolStripMenuItem();
             this.manageScore = new System.Windows.Forms.ToolStripMenuItem();
             this.avgScore = new System.Windows.Forms.ToolStripMenuItem();
             this.printResult = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.resultToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.avgResultToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.staticResultToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -336,22 +339,6 @@ namespace WindowsFormsApp2
             this.sroceToolStrip.Size = new System.Drawing.Size(71, 29);
             this.sroceToolStrip.Text = "Score";
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.userToolStrip,
-            this.coursesToolStrip,
-            this.sroceToolStrip});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(419, 31);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.UseWaitCursor = true;
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
             // addScore
             // 
             this.addScore.Name = "addScore";
@@ -381,6 +368,45 @@ namespace WindowsFormsApp2
             this.printResult.Name = "printResult";
             this.printResult.Size = new System.Drawing.Size(257, 30);
             this.printResult.Text = "Print Result";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userToolStrip,
+            this.coursesToolStrip,
+            this.sroceToolStrip,
+            this.resultToolStrip});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(419, 31);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.UseWaitCursor = true;
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // resultToolStrip
+            // 
+            this.resultToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.avgResultToolStrip,
+            this.staticResultToolStrip});
+            this.resultToolStrip.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.resultToolStrip.Name = "resultToolStrip";
+            this.resultToolStrip.Size = new System.Drawing.Size(74, 29);
+            this.resultToolStrip.Text = "Result";
+            // 
+            // avgResultToolStrip
+            // 
+            this.avgResultToolStrip.Name = "avgResultToolStrip";
+            this.avgResultToolStrip.Size = new System.Drawing.Size(252, 30);
+            this.avgResultToolStrip.Text = "AVG Result by Score";
+            // 
+            // staticResultToolStrip
+            // 
+            this.staticResultToolStrip.Name = "staticResultToolStrip";
+            this.staticResultToolStrip.Size = new System.Drawing.Size(252, 30);
+            this.staticResultToolStrip.Text = "Static Result";
             // 
             // MainMenu
             // 
@@ -448,5 +474,8 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.ToolStripMenuItem manageScore;
         private System.Windows.Forms.ToolStripMenuItem avgScore;
         private System.Windows.Forms.ToolStripMenuItem printResult;
+        private System.Windows.Forms.ToolStripMenuItem resultToolStrip;
+        private System.Windows.Forms.ToolStripMenuItem avgResultToolStrip;
+        private System.Windows.Forms.ToolStripMenuItem staticResultToolStrip;
     }
 }
