@@ -24,11 +24,17 @@ namespace WinFormsApp1.form.ScoreForm
         {
             MY_DB mydb = new MY_DB();
             Score score = new Score();
+            Course course = new Course();
 
-            SqlCommand cmd = new SqlCommand("SELECT course.label AS Course, AVG(score.student_score) AS 'Avarage Score' FROM course, score WHERE course.id = score.course_id GROUP BY course.label", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT course.label AS Course, CAST(AVG(score.student_score) AS FLOAT(2)) AS 'Avarage Score' FROM course, score WHERE course.id = score.course_id GROUP BY course.label", mydb.getConnection);
             DataTable table = new DataTable();
             SqlDataAdapter adpt = new SqlDataAdapter(cmd);
             adpt.Fill(table);
+            
+            if(course.avgGrade())
+            {
+
+            }
 
             avgGradeGrid.DataSource = table;
             avgGradeGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

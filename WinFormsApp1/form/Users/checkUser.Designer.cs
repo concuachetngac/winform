@@ -221,6 +221,7 @@ namespace WinFormsApp1
             this.toPrinterButton.TabIndex = 7;
             this.toPrinterButton.Text = "To Printer";
             this.toPrinterButton.UseVisualStyleBackColor = false;
+            this.toPrinterButton.Click += new System.EventHandler(this.toPrinterButton_Click);
             // 
             // saveToTextFileButton
             // 

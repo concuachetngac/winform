@@ -40,9 +40,11 @@ namespace WindowsFormsApp2
             addScore.Click += addScore_ItemClicked;
             avgScore.Click += avgScore_ItemClicked;
             manageScore.Click += manageScore_ItemClicked;
+            removeScore.Click += removeScore_ItemClicked;
 
             //Result dropdown Item
             avgResultToolStrip.Click += avgResult_ItemClicked;
+            staticResultToolStrip.Click += staticResult_ItemClicked;
         }
 
         private void addUserStrip_ItemClicked(object sender, EventArgs e)
@@ -134,6 +136,18 @@ namespace WindowsFormsApp2
         {
             AvgResult result = new AvgResult();
             result.Show();
+        }
+
+        private void staticResult_ItemClicked(object sender, EventArgs e)
+        {
+            StaticResult result = new StaticResult();
+            result.Show();
+        }
+
+        private void removeScore_ItemClicked(object sender, EventArgs e)
+        {
+            RemoveScore removeScore = new RemoveScore();
+            removeScore.Show();
         }
     }
 }

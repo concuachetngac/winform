@@ -133,6 +133,7 @@ namespace WinFormsApp1.form.ResultForm
             this.searchButton.TabIndex = 27;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // searchBox
             // 
@@ -177,6 +178,7 @@ namespace WinFormsApp1.form.ResultForm
             this.printButton.TabIndex = 31;
             this.printButton.Text = "Print";
             this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
             // cancelButton
             // 
@@ -187,8 +189,9 @@ namespace WinFormsApp1.form.ResultForm
             this.cancelButton.TabIndex = 32;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // Result
+            // AvgResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -207,7 +210,7 @@ namespace WinFormsApp1.form.ResultForm
             this.Controls.Add(this.fnameLabel);
             this.Controls.Add(this.IDBox);
             this.Controls.Add(this.studentIDLabel);
-            this.Name = "Result";
+            this.Name = "AvgResult";
             this.Text = "Result";
             this.Load += new System.EventHandler(this.Result_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listUserDataGrid)).EndInit();

@@ -45,6 +45,7 @@ namespace WinFormsApp1.form.ScoreForm
                 else
                 {
                     MessageBox.Show("There was an error !!!");
+                    course.avgGrade();
                 }
             }
             catch
@@ -97,7 +98,7 @@ namespace WinFormsApp1.form.ScoreForm
 
         private void showScoreButton_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("SELECT score.student_id, listUser.fname, listUser.lname, score.course_id, course.label, score.student_score FROM score, listUser, course WHERE score.student_id = listUser.Id AND score.course_id = course.id ", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT score.student_id, listUser.fname, listUser.lname, score.course_id, course.label, score.student_score, score.description FROM score, listUser, course WHERE score.student_id = listUser.Id AND score.course_id = course.id ", mydb.getConnection);
             listUserDataGrid.DataSource = user.getStudents(cmd);
             listUserDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             listUserDataGrid.Columns[0].HeaderText = "Student ID";
@@ -106,6 +107,26 @@ namespace WinFormsApp1.form.ScoreForm
             listUserDataGrid.Columns[3].HeaderText = "Course ID";
             listUserDataGrid.Columns[4].HeaderText = "Course Label";
             listUserDataGrid.Columns[5].HeaderText = "Score";
+            listUserDataGrid.Columns[6].HeaderText = "Description";
+        }
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+            RemoveScore remove = new RemoveScore();
+            remove.Show();
+        }
+
+        private void listUserDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                IDBox.Text = listUserDataGrid.CurrentRow.Cells[0].Value.ToString();
+                descriptionBox.Text = listUserDataGrid.CurrentRow.Cells[6].Value.ToString();
+                scoreBox.Text = listUserDataGrid.CurrentRow.Cells[5].Value.ToString();
+            } catch
+            {
+
+            }
         }
     }
 }

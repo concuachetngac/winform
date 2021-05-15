@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Data;
 using WinFormsApp1;
+using WinFormsApp1.csFile;
 
 namespace WindowsFormsApp2
 {
@@ -159,6 +160,28 @@ namespace WindowsFormsApp2
             adpt.Fill(table);
             return table;
         }
+        public DataTable getScoreByFname(string fname)
+        {
+            Result result = new Result();
+            Course course = new Course();
+
+            
+            DataTable table = new DataTable();
+            SqlCommand cmd = new SqlCommand("SELECT id FROM listUser WHERE fname = @fname", mydb.getConnection);
+            cmd.Parameters.Add("@fname", SqlDbType.NVarChar).Value = fname;
+            SqlDataAdapter adpt = new SqlDataAdapter(cmd);
+            adpt.Fill(table);
+            if (table.Rows.Count > 0)
+            {
+                return getScore(Convert.ToInt32(table.Rows[0][0]));
+            }
+            else
+            {
+                return result.getResultTable(course.getAllCourses());
+            }
+              
+        }
+
 
         public float getAvgScore(int id) 
         {

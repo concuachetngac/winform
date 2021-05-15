@@ -205,5 +205,10 @@ namespace WinFormsApp1
                 ExportDataToWord(dataGridViewCheckUser, sfd.FileName);
             }
         }
+
+        private void toPrinterButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

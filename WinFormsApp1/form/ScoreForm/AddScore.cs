@@ -69,11 +69,13 @@ namespace WinFormsApp1.form.ScoreForm
                 if (score.addScore(stdID, courseID, stdScore, des))
                 {
                     MessageBox.Show("Added");
+                    course.avgGrade();
                 }
                 else
                 {
                     MessageBox.Show("There was an error !!!");
                 }
+
             } catch
             {
                 MessageBox.Show("Your score is not valid !!!");

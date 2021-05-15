@@ -36,5 +36,26 @@ namespace WinFormsApp1.csFile
                 return false;
             }
         }
+
+        public bool removeScore(int stdID, int courseID)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE score WHERE student_id = @std_id AND course_id = @course_id", mydb.getConnection);
+            cmd.Parameters.Add("@std_id", SqlDbType.Int).Value = stdID;
+            cmd.Parameters.Add("@course_id", SqlDbType.Int).Value = courseID;
+
+            mydb.openConnection();
+
+            if (cmd.ExecuteNonQuery() > 0)
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
+
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsFormsApp2;
+using WinFormsApp1.csFile;
 
 namespace WinFormsApp1
 {
@@ -107,7 +108,6 @@ namespace WinFormsApp1
         }
         public int getCourseId(string label)
         {
-            MY_DB mydb = new MY_DB();
             SqlCommand cmd = new SqlCommand("SELECT Id FROM course WHERE label=@label", mydb.getConnection);
             cmd.Parameters.Add("@label", SqlDbType.NVarChar).Value = label;
             DataTable table = new DataTable();
@@ -120,16 +120,41 @@ namespace WinFormsApp1
 
         public string getCourseLabel(int courseID)
         {
-            MY_DB mydb = new MY_DB();
+            Course course = new Course();
+            Result result = new Result();
             SqlCommand cmd = new SqlCommand("SELECT label FROM course WHERE id=@id", mydb.getConnection);
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = courseID;
             DataTable table = new DataTable();
             SqlDataAdapter adpt = new SqlDataAdapter();
             adpt.SelectCommand = cmd;
             adpt.Fill(table);
-
-            return table.Rows[0].ItemArray[0].ToString();
+            if (table.Rows.Count > 0)
+            {
+                return table.Rows[0].ItemArray[0].ToString();
+            }
+            else
+            {
+                return "";
+            }
+            
         }
 
+        public bool avgGrade()
+        {
+            SqlCommand cmd = new SqlCommand("UPDATE course SET avg_grade = (SELECT AVG(score.student_score) FROM score WHERE course.id = score.course_id)", mydb.getConnection);
+            mydb.openConnection();
+
+            
+            if (cmd.ExecuteNonQuery() > 0)
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
     }
 }

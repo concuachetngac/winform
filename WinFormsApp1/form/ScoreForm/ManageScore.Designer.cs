@@ -160,6 +160,7 @@ namespace WinFormsApp1.form.ScoreForm
             this.listUserDataGrid.RowTemplate.Height = 24;
             this.listUserDataGrid.Size = new System.Drawing.Size(624, 372);
             this.listUserDataGrid.TabIndex = 27;
+            this.listUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listUserDataGrid_CellContentClick);
             // 
             // removeButton
             // 
@@ -173,6 +174,7 @@ namespace WinFormsApp1.form.ScoreForm
             this.removeButton.TabIndex = 28;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = false;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
             // avgScoreButton
             // 
