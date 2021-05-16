@@ -56,7 +56,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void saveButton_Click(object sender, EventArgs e)
+        private void addButton_Click(object sender, EventArgs e)
         {
             User user = new User();
             int id = Convert.ToInt32(IDBox.Text);
@@ -66,26 +66,39 @@ namespace WindowsFormsApp2
             string address = addressBox.Text;
             DateTime bdate = birthDate.Value.Date;
             string gender = "Female";
+
+
             if (maleRadio.Checked)
             {
                 gender = "Male";
 
             }
             MemoryStream pic = new MemoryStream();
-            if (verif())
+            try
             {
-                pictureBox.Image.Save(pic, pictureBox.Image.RawFormat);
-                if(user.insertUser(id, fname, lname, bdate, gender, phone, address, pic))
+                if (verif())
                 {
-                    MessageBox.Show("User Added", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    pictureBox.Image.Save(pic, pictureBox.Image.RawFormat);
+                    if (user.insertUser(id, fname, lname, bdate, gender, phone, address, pic))
+                    {
+                        MessageBox.Show("User Added", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                } else {
-                    MessageBox.Show("Error", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-            } else
+                else
+                {
+                    MessageBox.Show("Empty Field", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            } catch
             {
-                MessageBox.Show("Empty Field", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("This Id is available !!!");
             }
+
+
             bool verif()
             {
                 if ((lnameBox.Text == "")

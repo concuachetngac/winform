@@ -24,24 +24,48 @@ namespace WinFormsApp1.form.CourseForm
         private void ManageCourses_Load(object sender, EventArgs e)
         {
             refreshCourseListBox();
-            
+            courseListBox.DoubleClick += course_DoubleClick; 
 
         }
+
+        private void course_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                CourseStdList course = new CourseStdList();
+                course.id = Convert.ToInt32(IDBox.Text);
+                course.semester = semesterBox.Value.ToString();
+                course.courseName = courseListBox.SelectedItem.ToString();
+
+                course.Show();
+            } catch
+            {
+
+            }
+        }
+
+
 
         private void courseListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             MY_DB mydb = new MY_DB();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM course WHERE label = @label", mydb.getConnection);
-            cmd.Parameters.Add("@label", SqlDbType.NVarChar).Value = courseListBox.SelectedItem.ToString();
-            SqlDataAdapter adpt = new SqlDataAdapter();
-            adpt.SelectCommand = cmd;
-            DataTable table = new DataTable();
-            adpt.Fill(table);
-            IDBox.Text = table.Rows[0].ItemArray[0].ToString();
-            labelBox.Text = table.Rows[0].ItemArray[1].ToString();
-            periodNumb.Value = Convert.ToInt32(table.Rows[0].ItemArray[2]);
-            descriptionBox.Text = table.Rows[0].ItemArray[3].ToString();
-            semesterBox.Value = Convert.ToInt32(table.Rows[0].ItemArray[4]);
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM course WHERE label = @label", mydb.getConnection);
+                cmd.Parameters.Add("@label", SqlDbType.NVarChar).Value = courseListBox.SelectedItem.ToString();
+                SqlDataAdapter adpt = new SqlDataAdapter();
+                adpt.SelectCommand = cmd;
+                DataTable table = new DataTable();
+                adpt.Fill(table);
+                IDBox.Text = table.Rows[0].ItemArray[0].ToString();
+                labelBox.Text = table.Rows[0].ItemArray[1].ToString();
+                periodNumb.Value = Convert.ToInt32(table.Rows[0].ItemArray[2]);
+                descriptionBox.Text = table.Rows[0].ItemArray[3].ToString();
+                semesterBox.Value = Convert.ToInt32(table.Rows[0].ItemArray[4]);
+            } catch
+            {
+
+            }
         }
 
         private void firstButton_Click(object sender, EventArgs e)

@@ -32,7 +32,7 @@ namespace WinFormsApp1.form.ScoreForm
 
         private void AddScore_Load(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("SELECT Id, fname, lname FROM listUser", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname FROM listUser", mydb.getConnection);
 
             listUserDataGrid.DataSource = user.getStudents(cmd);
             listUserDataGrid.RowHeadersWidth = 7;

@@ -5,6 +5,9 @@
     <Compile Update="form\CourseForm\AddCourses.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="form\CourseForm\CourseStdList.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="form\CourseForm\ManageCourses.cs">
       <SubType>Form</SubType>
     </Compile>

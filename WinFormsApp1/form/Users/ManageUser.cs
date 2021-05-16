@@ -150,7 +150,7 @@ namespace WinFormsApp1.form.Users
         private void ManageUser_Load(object sender, EventArgs e)
         {
             MY_DB db = new MY_DB();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM listUser", db.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser", db.getConnection);
             listUserDataGrid.DataSource = user.userList();
             totalUserLabel.Text = "Total User: " + user.getStudents(cmd).Rows.Count.ToString();
             DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
@@ -162,7 +162,7 @@ namespace WinFormsApp1.form.Users
         private void resetButton_Click(object sender, EventArgs e)
         {
             MY_DB db = new MY_DB();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM listUser", db.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser", db.getConnection);
             listUserDataGrid.DataSource = user.userList();
             totalUserLabel.Text = "Total User: " + user.getStudents(cmd).Rows.Count.ToString();
         }
@@ -178,7 +178,7 @@ namespace WinFormsApp1.form.Users
             try
             {
                 int id = Convert.ToInt32(enterIDBox.Text);
-                SqlCommand cmd = new SqlCommand("SELECT * FROM listUser WHERE Id = @id", db.getConnection);
+                SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser WHERE user_id = @id", db.getConnection);
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 listUserDataGrid.DataSource = user.getStudents(cmd);
 
@@ -207,7 +207,7 @@ namespace WinFormsApp1.form.Users
                 imgColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
             } catch
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM listUser", db.getConnection);
+                SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser", db.getConnection);
                 listUserDataGrid.DataSource = user.userList();
                 totalUserLabel.Text = "Total User: " + user.getStudents(cmd).Rows.Count.ToString();
             }

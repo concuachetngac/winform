@@ -349,7 +349,6 @@ namespace WinFormsApp1.form.CourseForm
         private System.Windows.Forms.Label descriptionLabel;
         private System.Windows.Forms.Label hoursNumbLab;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.TextBox labelBox;
         private System.Windows.Forms.TextBox descriptionBox;
         private System.Windows.Forms.NumericUpDown periodNumb;
         private System.Windows.Forms.Button firstButton;
@@ -362,6 +361,7 @@ namespace WinFormsApp1.form.CourseForm
         private System.Windows.Forms.Label totalCourselLabel;
         public System.Windows.Forms.ListBox courseListBox;
         private System.Windows.Forms.Label semester;
-        private System.Windows.Forms.NumericUpDown semesterBox;
+        public System.Windows.Forms.TextBox labelBox;
+        public System.Windows.Forms.NumericUpDown semesterBox;
     }
 }

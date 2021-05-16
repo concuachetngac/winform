@@ -46,7 +46,7 @@ namespace WinFormsApp1
             {
                 if (yesRadio.Checked)
                 {
-                    command = new SqlCommand("SELECT * FROM listUser WHERE birthdate BETWEEN @fday AND @lday", db.getConnection);
+                    command = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser WHERE birthdate BETWEEN @fday AND @lday", db.getConnection);
                     command.Parameters.Add("@fday", SqlDbType.DateTime).Value = dateFrom.Value;
                     command.Parameters.Add("@lday", SqlDbType.DateTime).Value = dateTo.Value;
 
@@ -54,7 +54,7 @@ namespace WinFormsApp1
                 }
                 else
                 {
-                    command = new SqlCommand("SELECT * FROM listUser", db.getConnection);
+                    command = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser", db.getConnection);
                     getTable(command);
                 }
 
@@ -72,7 +72,7 @@ namespace WinFormsApp1
 
                 if (yesRadio.Checked)
                 {
-                    command = new SqlCommand("SELECT * FROM listUser WHERE gender = @gdr AND birthdate BETWEEN @fday AND @lday", db.getConnection);
+                    command = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser WHERE gender = @gdr AND birthdate BETWEEN @fday AND @lday", db.getConnection);
                     command.Parameters.Add("@fday", SqlDbType.DateTime).Value = dateFrom.Value;
                     command.Parameters.Add("@lday", SqlDbType.DateTime).Value = dateTo.Value;
                     command.Parameters.Add("@gdr", SqlDbType.VarChar).Value = gender;
@@ -80,7 +80,7 @@ namespace WinFormsApp1
                 }
                 else
                 {
-                    command = new SqlCommand("SELECT * FROM listUser WHERE gender = @gdr", db.getConnection);
+                    command = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser WHERE gender = @gdr", db.getConnection);
                     command.Parameters.Add("@gdr", SqlDbType.VarChar).Value = gender;
                     getTable(command);
                 }
@@ -102,7 +102,7 @@ namespace WinFormsApp1
 
         private void printSave_Load(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM listUser ", db.getConnection);
+            SqlCommand command = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser ", db.getConnection);
             getTable(command);
             toPrinterButton.Click += ToPrinterBtn_Click;
             checkButton.Click += CheckBtn_Click;

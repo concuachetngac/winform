@@ -16,7 +16,7 @@ namespace WinFormsApp1.csFile
         User user = new User();
         public DataTable getResultTable(DataTable getAllCourse)
         {
-            SqlCommand cmd = new SqlCommand("SELECT Id, fname, lname FROM listUser", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname FROM listUser WHERE selected_courses != ''", mydb.getConnection);
             SqlDataAdapter adpt = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adpt.Fill(table);
@@ -51,18 +51,18 @@ namespace WinFormsApp1.csFile
         //This function will return table with score of searched user
         public DataTable searchUserTable(DataTable getAllCourse, string id_fname)
         {
-            SqlCommand cmd = new SqlCommand("SELECT Id, fname, lname FROM listUser WHERE id = @id OR fname = @fname", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname FROM listUser WHERE user_id = @user_id OR fname = @fname", mydb.getConnection);
 
             try
             {
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = Convert.ToInt32(id_fname);
+                cmd.Parameters.Add("@user_id", SqlDbType.Int).Value = Convert.ToInt32(id_fname);
                 cmd.Parameters.Add("@fname", SqlDbType.NVarChar).Value = "";
             }
             catch
             {
 
                 cmd.Parameters.Clear();
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = 0;
+                cmd.Parameters.Add("@user_id", SqlDbType.Int).Value = 0;
                 cmd.Parameters.Add("@fname", SqlDbType.NVarChar).Value = id_fname;
 
             }

@@ -74,7 +74,7 @@ namespace WinFormsApp1.form.ScoreForm
 
         private void showStudentButton_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("SELECT Id, fname, lname, birthdate FROM listUser", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname, birthdate FROM listUser", mydb.getConnection);
 
             listUserDataGrid.DataSource = user.getStudents(cmd);
             listUserDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -86,7 +86,7 @@ namespace WinFormsApp1.form.ScoreForm
 
         private void ManageScore_Load(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("SELECT Id, fname, lname, birthdate FROM listUser", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname, birthdate FROM listUser", mydb.getConnection);
 
             listUserDataGrid.DataSource = user.getStudents(cmd);
             listUserDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -98,7 +98,7 @@ namespace WinFormsApp1.form.ScoreForm
 
         private void showScoreButton_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("SELECT score.student_id, listUser.fname, listUser.lname, score.course_id, course.label, score.student_score, score.description FROM score, listUser, course WHERE score.student_id = listUser.Id AND score.course_id = course.id ", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT score.student_id, listUser.fname, listUser.lname, score.course_id, course.label, score.student_score, score.description FROM score, listUser, course WHERE score.student_id = listUser.user_id AND score.course_id = course.id ", mydb.getConnection);
             listUserDataGrid.DataSource = user.getStudents(cmd);
             listUserDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             listUserDataGrid.Columns[0].HeaderText = "Student ID";

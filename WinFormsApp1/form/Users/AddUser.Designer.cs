@@ -282,7 +282,7 @@ namespace WindowsFormsApp2
             this.saveButton.TabIndex = 10;
             this.saveButton.Text = "Add";
             this.saveButton.UseVisualStyleBackColor = false;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            this.saveButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // IDlabel
             // 

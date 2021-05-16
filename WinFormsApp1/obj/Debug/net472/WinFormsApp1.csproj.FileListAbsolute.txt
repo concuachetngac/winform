@@ -64,3 +64,4 @@ H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ScoreForm.ManageScore
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ResultForm.AvgResult.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ResultForm.StaticResult.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.ScoreForm.RemoveScore.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CourseForm.CourseStdList.resources

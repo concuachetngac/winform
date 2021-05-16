@@ -14,7 +14,7 @@ namespace WindowsFormsApp2
         MY_DB mydb = new MY_DB();
         public bool insertUser(int Id, string fname, string lname, DateTime birthDate, string gender, int phone, string address, MemoryStream picture)
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO listUser (id, fname, lname, birthdate, gender, phone, picture, address) VALUES (@id, @fname, @lname, @birthdate, @gender, @phone, @picture, @address)", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("INSERT INTO listUser (user_id, fname, lname, birthdate, gender, phone, picture, address) VALUES (@id, @fname, @lname, @birthdate, @gender, @phone, @picture, @address)", mydb.getConnection);
             cmd.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = Id;
             cmd.Parameters.Add("@fname", System.Data.SqlDbType.NVarChar).Value = fname;
             cmd.Parameters.Add("@lname", System.Data.SqlDbType.NVarChar).Value = lname;
@@ -39,7 +39,7 @@ namespace WindowsFormsApp2
         {
             MY_DB db = new MY_DB();
             DataTable tb = new DataTable();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM listUser", db.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser", db.getConnection);
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = cmd;
             adapter.Fill(tb);
@@ -47,7 +47,7 @@ namespace WindowsFormsApp2
         }
         public bool deleteUser(int id)
         {
-            SqlCommand cmd = new SqlCommand("DELETE FROM listUser WHERE Id = @id", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("DELETE FROM listUser WHERE user_id = @id", mydb.getConnection);
             cmd.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
             mydb.openConnection();
             if((cmd.ExecuteNonQuery() == 1))
@@ -70,7 +70,7 @@ namespace WindowsFormsApp2
         }
         public bool editUser(int id, string fname, string lname, DateTime bdate, string gender, string phone, string address, MemoryStream picture)
         {
-            SqlCommand command = new SqlCommand("UPDATE listUser SET fname = @fname, lname = @lname, birthdate = @bdate, gender = @gender, phone = @phone, address = @adrs, picture = @picture WHERE Id = @id", mydb.getConnection);
+            SqlCommand command = new SqlCommand("UPDATE listUser SET fname = @fname, lname = @lname, birthdate = @bdate, gender = @gender, phone = @phone, address = @adrs, picture = @picture WHERE user_id = @id", mydb.getConnection);
             command.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
             command.Parameters.Add("@fname", System.Data.SqlDbType.NVarChar).Value = fname;
             command.Parameters.Add("@lname", System.Data.SqlDbType.NVarChar).Value = lname;
@@ -135,7 +135,7 @@ namespace WindowsFormsApp2
                 selectedCourse += course.getCourseLabel(Convert.ToInt32(table.Rows[i].ItemArray[0])) + "\n";
             }
             selectedCourse += course.getCourseLabel(Convert.ToInt32(table.Rows[table.Rows.Count - 1].ItemArray[0])) + ". ";
-            SqlCommand cmd = new SqlCommand("UPDATE listUser SET selected_courses = @selected WHERE id=@id", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("UPDATE listUser SET selected_courses = @selected WHERE user_id=@id", mydb.getConnection);
             cmd.Parameters.Add("@selected", SqlDbType.NVarChar).Value = selectedCourse;
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
             mydb.openConnection();
@@ -167,7 +167,7 @@ namespace WindowsFormsApp2
 
             
             DataTable table = new DataTable();
-            SqlCommand cmd = new SqlCommand("SELECT id FROM listUser WHERE fname = @fname", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id FROM listUser WHERE fname = @fname", mydb.getConnection);
             cmd.Parameters.Add("@fname", SqlDbType.NVarChar).Value = fname;
             SqlDataAdapter adpt = new SqlDataAdapter(cmd);
             adpt.Fill(table);
@@ -190,7 +190,9 @@ namespace WindowsFormsApp2
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
             SqlDataAdapter adpt = new SqlDataAdapter(cmd);
             adpt.Fill(table);
+
             return float.Parse(table.Rows[0][0].ToString());
+
         }
     }
 }

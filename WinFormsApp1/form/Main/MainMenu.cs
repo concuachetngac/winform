@@ -14,6 +14,7 @@ using WinFormsApp1.form.CourseForm;
 using WinFormsApp1.form.Users;
 using WinFormsApp1.form.ScoreForm;
 using WinFormsApp1.form.ResultForm;
+using System.Drawing.Printing;
 
 namespace WindowsFormsApp2
 {
@@ -41,6 +42,7 @@ namespace WindowsFormsApp2
             avgScore.Click += avgScore_ItemClicked;
             manageScore.Click += manageScore_ItemClicked;
             removeScore.Click += removeScore_ItemClicked;
+            printResult.Click += print_ItemClicked;
 
             //Result dropdown Item
             avgResultToolStrip.Click += avgResult_ItemClicked;
@@ -148,6 +150,19 @@ namespace WindowsFormsApp2
         {
             RemoveScore removeScore = new RemoveScore();
             removeScore.Show();
+        }
+
+        private void print_ItemClicked(object sender, EventArgs e)
+        {
+            PrintDialog prdi = new PrintDialog();
+            prdi.ShowDialog();
+            PrintDocument prdo = new PrintDocument();
+            prdo.DocumentName = "Print Document";
+            prdi.Document = prdo;
+            if (prdi.ShowDialog() == DialogResult.OK)
+            {
+                prdo.Print();
+            }
         }
     }
 }

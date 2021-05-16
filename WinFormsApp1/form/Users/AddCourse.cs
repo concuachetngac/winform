@@ -89,7 +89,7 @@ namespace WinFormsApp1.form.Users
         {
             MY_DB mydb = new MY_DB();
             User user = new User();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM listUser WHERE Id=@id", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("SELECT user_id, fname, lname, birthdate, gender, phone, address, picture, selected_courses FROM listUser WHERE user_id=@id", mydb.getConnection);
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = Convert.ToInt32(idBox.Text);
             SqlDataAdapter adpt = new SqlDataAdapter();
             DataTable table = new DataTable();
