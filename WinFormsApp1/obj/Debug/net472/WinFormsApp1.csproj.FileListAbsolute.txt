@@ -68,3 +68,8 @@ H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CustomerForm.Customer
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CustomerForm.CustomerMainMenu.CustomerMainInterface.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.UserForm.UserMainMenu.MainMenu.resources
 H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CustomerForm.AddEditContact.AddContact.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CustomerForm.AddEditContact.EditContact.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CustomerForm.AddEditContact.SelectContact.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CustomerForm.ShowFullContact.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CustomerForm.EditMyInfo.resources
+H:\winform\WinFormsApp1\obj\Debug\net472\WinFormsApp1.form.CustomerForm.CustomerMainMenu.SelectContactMenu.resources

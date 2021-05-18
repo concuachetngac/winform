@@ -71,7 +71,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             }
             catch
             {
-                MessageBox.Show("This Id is available !!!");
+                MessageBox.Show("This username too long or ID available !!!");
             }
 
 

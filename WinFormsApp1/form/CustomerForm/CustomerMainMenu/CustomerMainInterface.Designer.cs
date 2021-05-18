@@ -129,6 +129,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
             this.editInfoLabel.Size = new System.Drawing.Size(121, 27);
             this.editInfoLabel.TabIndex = 0;
             this.editInfoLabel.Text = "Edit my info";
+            this.editInfoLabel.Click += new System.EventHandler(this.editInfoLabel_Click);
             // 
             // imgPanel
             // 
@@ -364,6 +365,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
             this.selectButton.TabIndex = 8;
             this.selectButton.Text = "Select Contact";
             this.selectButton.UseVisualStyleBackColor = false;
+            this.selectButton.Click += new System.EventHandler(this.selectButton_Click);
             // 
             // IDBox
             // 
@@ -380,9 +382,9 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(4, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 29);
+            this.label4.Size = new System.Drawing.Size(192, 29);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Enter Contect ID:";
+            this.label4.Text = "Enter Contact ID:";
             // 
             // removeButton
             // 
@@ -396,6 +398,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
             this.removeButton.TabIndex = 8;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = false;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
             // showFullButton
             // 
@@ -409,6 +412,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
             this.showFullButton.TabIndex = 7;
             this.showFullButton.Text = "Show Full List";
             this.showFullButton.UseVisualStyleBackColor = false;
+            this.showFullButton.Click += new System.EventHandler(this.showFullButton_Click);
             // 
             // editButton
             // 
@@ -421,6 +425,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
             this.editButton.TabIndex = 6;
             this.editButton.Text = "Edit";
             this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // addButton
             // 
@@ -496,7 +501,6 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
         private System.Windows.Forms.Button addGroupButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button selectButton;
-        private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.ComboBox removeGroupComboBox;
         private System.Windows.Forms.Label label8;
@@ -507,5 +511,6 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
         private System.Windows.Forms.TextBox newGroupNameBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button editGroupButton;
+        public System.Windows.Forms.TextBox IDBox;
     }
 }

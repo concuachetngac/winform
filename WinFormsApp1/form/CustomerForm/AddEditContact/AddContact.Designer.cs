@@ -145,7 +145,7 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.fnameBox.Location = new System.Drawing.Point(131, 24);
             this.fnameBox.Name = "fnameBox";
             this.fnameBox.Size = new System.Drawing.Size(312, 27);
-            this.fnameBox.TabIndex = 8;
+            this.fnameBox.TabIndex = 1;
             // 
             // lnameBox
             // 
@@ -153,7 +153,7 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.lnameBox.Location = new System.Drawing.Point(131, 66);
             this.lnameBox.Name = "lnameBox";
             this.lnameBox.Size = new System.Drawing.Size(312, 27);
-            this.lnameBox.TabIndex = 9;
+            this.lnameBox.TabIndex = 2;
             // 
             // phoneBox
             // 
@@ -161,7 +161,7 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.phoneBox.Location = new System.Drawing.Point(131, 156);
             this.phoneBox.Name = "phoneBox";
             this.phoneBox.Size = new System.Drawing.Size(312, 27);
-            this.phoneBox.TabIndex = 11;
+            this.phoneBox.TabIndex = 4;
             // 
             // emailBox
             // 
@@ -169,7 +169,7 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.emailBox.Location = new System.Drawing.Point(131, 203);
             this.emailBox.Name = "emailBox";
             this.emailBox.Size = new System.Drawing.Size(312, 27);
-            this.emailBox.TabIndex = 12;
+            this.emailBox.TabIndex = 5;
             // 
             // addressBox
             // 
@@ -178,7 +178,8 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.addressBox.Multiline = true;
             this.addressBox.Name = "addressBox";
             this.addressBox.Size = new System.Drawing.Size(312, 92);
-            this.addressBox.TabIndex = 13;
+            this.addressBox.TabIndex = 6;
+            this.addressBox.TextChanged += new System.EventHandler(this.addressBox_TextChanged);
             // 
             // IDBox
             // 
@@ -186,7 +187,7 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.IDBox.Location = new System.Drawing.Point(344, 361);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(99, 27);
-            this.IDBox.TabIndex = 14;
+            this.IDBox.TabIndex = 8;
             // 
             // pictureBox
             // 
@@ -207,9 +208,10 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.uploadPic.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
             this.uploadPic.Name = "uploadPic";
             this.uploadPic.Size = new System.Drawing.Size(161, 26);
-            this.uploadPic.TabIndex = 16;
+            this.uploadPic.TabIndex = 7;
             this.uploadPic.Text = "Upload Picture";
             this.uploadPic.UseVisualStyleBackColor = true;
+            this.uploadPic.Click += new System.EventHandler(this.uploadPic_Click);
             // 
             // addButton
             // 
@@ -219,7 +221,7 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.addButton.Location = new System.Drawing.Point(40, 579);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(187, 47);
-            this.addButton.TabIndex = 17;
+            this.addButton.TabIndex = 9;
             this.addButton.Text = "Add Contact";
             this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
@@ -232,9 +234,10 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.cancelButton.Location = new System.Drawing.Point(256, 579);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(187, 47);
-            this.cancelButton.TabIndex = 18;
+            this.cancelButton.TabIndex = 10;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // groupComboBox
             // 
@@ -243,7 +246,7 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             this.groupComboBox.Location = new System.Drawing.Point(132, 112);
             this.groupComboBox.Name = "groupComboBox";
             this.groupComboBox.Size = new System.Drawing.Size(311, 28);
-            this.groupComboBox.TabIndex = 19;
+            this.groupComboBox.TabIndex = 3;
             // 
             // AddContact
             // 

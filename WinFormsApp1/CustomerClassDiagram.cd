@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsFormsApp2.MY_DB" Collapsed="true">
+    <Position X="13.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAABAQAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>csFile\MY_DB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.Program" Collapsed="true">
+    <Position X="13.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>csFile\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.csFile.CustomerCs.Contact" Collapsed="true">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAACAAAAAAEAABAAAAAAIAIAAAAAAA=</HashCode>
+      <FileName>csFile\CustomerCs\Contact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.csFile.Customer" Collapsed="true">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABABAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>csFile\CustomerCs\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.csFile.Global" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABEAAAAQEAAAAAAAAAAAA=</HashCode>
+      <FileName>csFile\CustomerCs\Global.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.csFile.CustomerCs.Group" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAQAAABAAAAAAEAAAAAAAAJEAAAAAAABA=</HashCode>
+      <FileName>csFile\CustomerCs\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.Login" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAQRASAEAhABQISACAASAAAIAAACAAAQAABCAIA=</HashCode>
+      <FileName>form\Main\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CustomerForm.AddEditContact.AddContact" Collapsed="true">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wEACAAAAACQQABAAAQCAAAgCQCAAAIAAiQAwAAACAAg=</HashCode>
+      <FileName>form\CustomerForm\AddEditContact\AddContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CustomerForm.AddEditContact.EditContact" Collapsed="true">
+    <Position X="2.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wEAGAAIAACQQQBIAAQCEAAgCQCAAQIAAAQAQAAAAAAg=</HashCode>
+      <FileName>form\CustomerForm\AddEditContact\EditContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CustomerForm.AddEditContact.SelectContact" Collapsed="true">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAAAAAAACAAAgGAAAAAAAAAAAAQAAQAAA=</HashCode>
+      <FileName>form\CustomerForm\AddEditContact\SelectContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CustomerForm.CustomerMainMenu.CustomerMainInterface" Collapsed="true">
+    <Position X="1" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAEEBkoEICAEAjQABAGBAAgmQAAQARAAgQJgAQAAAAQ=</HashCode>
+      <FileName>form\CustomerForm\CustomerMainMenu\CustomerMainInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CustomerForm.CustomerMainMenu.SelectContactMenu" Collapsed="true">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACEAAAAAAACAAAAGAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>form\CustomerForm\CustomerMainMenu\SelectContactMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CustomerForm.CustomerRegister.CustomerRegis" Collapsed="true">
+    <Position X="1" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAACAAAAAKAAABAggQCAAAADACAAAACAQQABAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CustomerForm.EditMyInfo" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAACAAIAAKAAABAAgQCAAAACACAAAACAQAAAAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CustomerForm.ShowFullContact" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAAAAAACIAABAAAACAAAgCAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>form\CustomerForm\ShowFullContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

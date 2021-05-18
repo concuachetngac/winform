@@ -5,10 +5,25 @@
     <Compile Update="form\CustomerForm\AddEditContact\AddContact.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="form\CustomerForm\AddEditContact\EditContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\CustomerForm\AddEditContact\SelectContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="form\CustomerForm\CustomerMainMenu\CustomerMainInterface.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="form\CustomerForm\CustomerMainMenu\SelectContactMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="form\CustomerForm\CustomerRegister\CustomerRegis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\CustomerForm\EditMyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form\CustomerForm\ShowFullContact.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="form\UserForm\CourseForm\AddCourses.cs">

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsFormsApp2.MY_DB" Collapsed="true">
+    <Position X="14.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAABAQAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>csFile\MY_DB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.Course" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAiAAAAAAAAQAAAIAAAAAAEAAAAgAIAAAAQAAAAAIA=</HashCode>
+      <FileName>csFile\UserCs\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.csFile.Result" Collapsed="true">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAgAAAAAAAAAAEAAAAAAAABAAAAAAAAQg=</HashCode>
+      <FileName>csFile\UserCs\Result.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.csFile.Score" Collapsed="true">
+    <Position X="12.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAEAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>csFile\UserCs\Score.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.User" Collapsed="true">
+    <Position X="12.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAgAAAAAAAAEAEAgAAAEAAAQAACAgAAAAAEAgAQ=</HashCode>
+      <FileName>csFile\UserCs\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.Program" Collapsed="true">
+    <Position X="14.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>csFile\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.AddCourses" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAKAAgDAAAACgACAOAABAAAAAAgBAQARAAAE=</HashCode>
+      <FileName>form\UserForm\CourseForm\AddCourses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CourseForm.CourseStdList" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAgFgAAACEACIGAAAgAAAAAAAAAAAAgiA=</HashCode>
+      <FileName>form\UserForm\CourseForm\CourseStdList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.EditCourse" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAgKAAABAAAADAACAGAAAAoAAAAQBAEARAAAg=</HashCode>
+      <FileName>form\UserForm\CourseForm\EditCourse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CourseForm.ManageCourses" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEQAIAEiAKkBAAACCAACAC0BACABAAoSBhAARAgAA=</HashCode>
+      <FileName>form\UserForm\CourseForm\ManageCourses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.CourseForm.Print" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAAAAAAICAABACAEAAAABAEAIAAAAAAAA=</HashCode>
+      <FileName>form\UserForm\CourseForm\Print.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.RemoveCourse" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACEAAAAAAQCAAAASQAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>form\UserForm\CourseForm\RemoveCourse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.formFile.Register" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAgAACAAgBAAAICAAAASAACIAAAAAQAAAkACAAA=</HashCode>
+      <FileName>form\UserForm\RegisterForm\Register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.ResultForm.AvgResult" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACgIIAASQABBAAJACIAAAGAAAAgADABQIQAAAAAQA=</HashCode>
+      <FileName>form\UserForm\ResultForm\AvgResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.ResultForm.StaticResult" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAARAIAACAAAACAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>form\UserForm\ResultForm\StaticResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.ScoreForm.AddScore" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIABASAAgAQAIAiIAAAWAAAAAAAAgUAhAAQAAQQ=</HashCode>
+      <FileName>form\UserForm\ScoreForm\AddScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.ScoreForm.AverageGrade" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAgAAAAAAAAAEAAA=</HashCode>
+      <FileName>form\UserForm\ScoreForm\AverageGrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.ScoreForm.ManageScore" Collapsed="true">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAEgIABASAAgAQAMACIAIAGQABAAFAAgUAgEAQAAQw=</HashCode>
+      <FileName>form\UserForm\ScoreForm\ManageScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.ScoreForm.RemoveScore" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAQASAAgAAAIACIAAAGQAAAABAAAQAAAAAAAQw=</HashCode>
+      <FileName>form\UserForm\ScoreForm\RemoveScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.MainMenu" Collapsed="true">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AaCCJj8AISAAAKIOAEOigAOSCIFEEcTMQxYQDzqAoEg=</HashCode>
+      <FileName>form\UserForm\UserMainMenu\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.Users.AddCourse" Collapsed="true">
+    <Position X="0.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABAAIAACAAAQAAAACBACECAAAKAAQEgEBgQAAAAAA=</HashCode>
+      <FileName>form\UserForm\Users\AddCourse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.AddUser" Collapsed="true">
+    <Position X="2.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qAECAIQQAKQAQgAABQCAiBASoCAMAACAAQAxABAAQAk=</HashCode>
+      <FileName>form\UserForm\Users\AddUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.CheckUser" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAwAQiJAACAQCEggAACAABACAEAQCAgAACAwAQAAgCA=</HashCode>
+      <FileName>form\UserForm\Users\CheckUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.form.Users.ManageUser" Collapsed="true">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qAEGAIIAAKAAAjAAJYCAAJASQCAEgBSAgQAhAAAAQQk=</HashCode>
+      <FileName>form\UserForm\Users\ManageUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.UserEdit" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qAAGAAICACAAAhAABQCAABACQCJEABCAEQABgAAAQAk=</HashCode>
+      <FileName>form\UserForm\Users\UserEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.UserList" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAKAAAAAAAASAAAACAAAAIIAAAAAAAAAAAQA=</HashCode>
+      <FileName>form\UserForm\Users\UserList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp2.Login" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAQRASAEAhABQISACAASAAAIAAACAAAQAABCAIA=</HashCode>
+      <FileName>form\Main\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -20,6 +20,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
     {
         MY_DB mydb = new MY_DB();
         Group group = new Group();
+        Contact contact = new Contact();
         public CustomerMainInterface()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
 
         private void CustomerMainInterface_Load(object sender, EventArgs e)
         {
-            getCustomerImgAndUsername(Global.UserID);
+            getCustomerImgAndUsername(Global.CustomerID);
             refresh();
         }
 
@@ -56,16 +57,15 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
         {
             AddContact contact = new AddContact();
             contact.Show();
-            contact.TopMost = true;
         }
 
         private void addGroupButton_Click(object sender, EventArgs e)
         {
             string name = groupNameBox.Text;
 
-            if(groupNameBox.Text != "" && group.checkAvailable(Global.UserID, name))
+            if(groupNameBox.Text != "" && group.checkAvailable(Global.CustomerID, name))
             {
-                if(group.addGroup(name, Global.UserID))
+                if(group.addGroup(name, Global.CustomerID))
                 {
                     MessageBox.Show("Contact Added", "Add Contact", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     refresh();
@@ -142,6 +142,52 @@ namespace WinFormsApp1.form.CustomerForm.CustomerMainMenu
             else
             {
                 MessageBox.Show("Please Select Group !!!");
+            }
+        }
+
+        private void editButton_Click(object sender, EventArgs e)
+        {
+            EditContact edit = new EditContact();
+            edit.Show();
+        }
+
+        private void showFullButton_Click(object sender, EventArgs e)
+        {
+            ShowFullContact show = new ShowFullContact();
+            show.Show();
+        }
+
+        private void editInfoLabel_Click(object sender, EventArgs e)
+        {
+            EditMyInfo edit = new EditMyInfo();
+            edit.Show();
+        }
+
+        private void selectButton_Click(object sender, EventArgs e)
+        {
+            SelectContact select = new SelectContact();
+            this.Close();
+            select.Show();
+        }
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+            if (IDBox.Text != "")
+            {
+
+                if (contact.removeContact(Convert.ToInt32(IDBox.Text)))
+                {
+                    MessageBox.Show("Contact Removed", "Remove Contact", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show("Error", "Remove Contact", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Empty Field", "Remove Contact", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

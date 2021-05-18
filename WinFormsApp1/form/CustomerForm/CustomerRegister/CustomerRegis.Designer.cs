@@ -32,7 +32,6 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.IDlabel = new System.Windows.Forms.Label();
             this.IDBox = new System.Windows.Forms.TextBox();
             this.fnameLabel = new System.Windows.Forms.Label();
-            this.fnameBox = new System.Windows.Forms.TextBox();
             this.lnameLabel = new System.Windows.Forms.Label();
             this.lnameBox = new System.Windows.Forms.TextBox();
             this.phoneLabel = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.label2 = new System.Windows.Forms.Label();
             this.registerButton = new System.Windows.Forms.Button();
             this.backToLoginLabel = new System.Windows.Forms.Label();
+            this.fnameBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +70,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.IDBox.Margin = new System.Windows.Forms.Padding(2);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(119, 23);
-            this.IDBox.TabIndex = 2;
+            this.IDBox.TabIndex = 1;
             // 
             // fnameLabel
             // 
@@ -83,18 +83,6 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.fnameLabel.Size = new System.Drawing.Size(110, 28);
             this.fnameLabel.TabIndex = 3;
             this.fnameLabel.Text = "First Name:";
-            // 
-            // fnameBox
-            // 
-            this.fnameBox.AccessibleName = "";
-            this.fnameBox.BackColor = System.Drawing.Color.Gray;
-            this.fnameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.fnameBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.fnameBox.Location = new System.Drawing.Point(145, 113);
-            this.fnameBox.Margin = new System.Windows.Forms.Padding(2);
-            this.fnameBox.Name = "fnameBox";
-            this.fnameBox.Size = new System.Drawing.Size(177, 23);
-            this.fnameBox.TabIndex = 4;
             // 
             // lnameLabel
             // 
@@ -117,7 +105,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.lnameBox.Margin = new System.Windows.Forms.Padding(2);
             this.lnameBox.Name = "lnameBox";
             this.lnameBox.Size = new System.Drawing.Size(177, 23);
-            this.lnameBox.TabIndex = 6;
+            this.lnameBox.TabIndex = 3;
             // 
             // phoneLabel
             // 
@@ -140,7 +128,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.userNameBox.Margin = new System.Windows.Forms.Padding(2);
             this.userNameBox.Name = "userNameBox";
             this.userNameBox.Size = new System.Drawing.Size(177, 23);
-            this.userNameBox.TabIndex = 8;
+            this.userNameBox.TabIndex = 4;
             // 
             // label1
             // 
@@ -164,7 +152,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.passWordBox.Name = "passWordBox";
             this.passWordBox.PasswordChar = '*';
             this.passWordBox.Size = new System.Drawing.Size(177, 23);
-            this.passWordBox.TabIndex = 10;
+            this.passWordBox.TabIndex = 5;
             // 
             // picLabel
             // 
@@ -197,7 +185,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.uploadPic.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
             this.uploadPic.Name = "uploadPic";
             this.uploadPic.Size = new System.Drawing.Size(177, 26);
-            this.uploadPic.TabIndex = 13;
+            this.uploadPic.TabIndex = 6;
             this.uploadPic.Text = "Upload Picture";
             this.uploadPic.UseVisualStyleBackColor = true;
             this.uploadPic.Click += new System.EventHandler(this.uploadPic_Click);
@@ -226,7 +214,7 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.registerButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(238, 49);
-            this.registerButton.TabIndex = 15;
+            this.registerButton.TabIndex = 7;
             this.registerButton.Text = "Register";
             this.registerButton.UseVisualStyleBackColor = false;
             this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
@@ -245,12 +233,24 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.backToLoginLabel.Text = "<< Have an account? Log in";
             this.backToLoginLabel.Click += new System.EventHandler(this.backToLoginLabel_Click);
             // 
+            // fnameBox
+            // 
+            this.fnameBox.BackColor = System.Drawing.SystemColors.GrayText;
+            this.fnameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.fnameBox.ForeColor = System.Drawing.SystemColors.Info;
+            this.fnameBox.Location = new System.Drawing.Point(145, 112);
+            this.fnameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.fnameBox.Name = "fnameBox";
+            this.fnameBox.Size = new System.Drawing.Size(177, 23);
+            this.fnameBox.TabIndex = 2;
+            // 
             // CustomerRegis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(342, 580);
+            this.Controls.Add(this.fnameBox);
             this.Controls.Add(this.backToLoginLabel);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.label2);
@@ -263,7 +263,6 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
             this.Controls.Add(this.phoneLabel);
             this.Controls.Add(this.lnameBox);
             this.Controls.Add(this.lnameLabel);
-            this.Controls.Add(this.fnameBox);
             this.Controls.Add(this.fnameLabel);
             this.Controls.Add(this.IDBox);
             this.Controls.Add(this.IDlabel);
@@ -281,7 +280,6 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
         private System.Windows.Forms.Label IDlabel;
         private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.Label fnameLabel;
-        private System.Windows.Forms.TextBox fnameBox;
         private System.Windows.Forms.Label lnameLabel;
         private System.Windows.Forms.TextBox lnameBox;
         private System.Windows.Forms.Label phoneLabel;
@@ -294,5 +292,6 @@ namespace WinFormsApp1.form.CustomerForm.CustomerRegister
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button registerButton;
         private System.Windows.Forms.Label backToLoginLabel;
+        private System.Windows.Forms.TextBox fnameBox;
     }
 }

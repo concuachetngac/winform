@@ -61,6 +61,22 @@ namespace WinFormsApp1.csFile.CustomerCs
             return Convert.ToInt32(table.Rows[0][0]);
         }
 
+        public string getGroupName(int groupID)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT name FROM groups where id = @id", mydb.getConnection);
+            cmd.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = groupID;
+            SqlDataAdapter adpt = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adpt.Fill(table);
+
+            if (table.Rows.Count == 0)
+            {
+                return "";
+            }
+
+            return table.Rows[0][0].ToString();
+        }
+
         public bool editGroup(string groupName, int groupID) 
         {
             SqlCommand cmd = new SqlCommand("UPDATE groups SET name=@name WHERE id = @groupid ", mydb.getConnection);
@@ -118,5 +134,7 @@ namespace WinFormsApp1.csFile.CustomerCs
             }
             return false;
         }
+
+
     }
 }

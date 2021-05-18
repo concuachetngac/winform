@@ -14,7 +14,6 @@ namespace WinFormsApp1.form.Users
 {
     public partial class AddCourse : Form
     {
-        Course course = new Course();
         public AddCourse()
         {
             InitializeComponent();

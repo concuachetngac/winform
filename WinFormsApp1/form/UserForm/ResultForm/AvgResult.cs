@@ -18,7 +18,6 @@ namespace WinFormsApp1.form.ResultForm
     {
         MY_DB mydb = new MY_DB();
         User user = new User();
-        Course course = new Course();
         Score score = new Score();
         Result result = new Result();
         public AvgResult()

@@ -95,7 +95,7 @@ namespace WindowsFormsApp2
                 {
                     MessageBox.Show("Ok, next time will be go to Main Menu of App");
                     CustomerMainInterface customer = new CustomerMainInterface();
-                    Global.setUserID(Convert.ToInt32(table.Rows[0][0]));
+                    Global.setCustomerID(Convert.ToInt32(table.Rows[0][0]));
                     customer.Show();
                 }
                 else

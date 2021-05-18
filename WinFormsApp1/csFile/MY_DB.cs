@@ -33,4 +33,8 @@ namespace WindowsFormsApp2
             }
         }
     }
+
+    public class Class1
+    {
+    }
 }

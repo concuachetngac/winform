@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp1.csFile;
 using WinFormsApp1.csFile.CustomerCs;
 
 namespace WinFormsApp1.form.CustomerForm.AddEditContact
@@ -32,21 +33,20 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             string address = addressBox.Text;
             MemoryStream pic = new MemoryStream();
 
-            try
-            {
-                if (verif())
-                {
-                    pictureBox.Image.Save(pic, pictureBox.Image.RawFormat);
-                    if (contact.addContact(userID, fname, lname, groupID, phone, email, address, pic))
+            try { 
+                    if (verif())
                     {
-                        MessageBox.Show("Contact Added", "Add Contact", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        pictureBox.Image.Save(pic, pictureBox.Image.RawFormat);
+                        if (contact.addContact(userID, fname, lname, groupID, phone, email, address, pic, Global.CustomerID))
+                        {
+                            MessageBox.Show("Contact Added", "Add Contact", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error", "Add Contact", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    else
-                    {
-                        MessageBox.Show("Error", "Add Contact", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
                 else
                 {
                     MessageBox.Show("Empty Field", "Add Contact", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -57,7 +57,7 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
                 MessageBox.Show("This Id is available !!!");
             }
 
-            bool verif()
+    bool verif()
             {
                 if ((lnameBox.Text == "")
                     || (fnameBox.Text == "")
@@ -85,6 +85,26 @@ namespace WinFormsApp1.form.CustomerForm.AddEditContact
             {
                 groupComboBox.Items.Add(groupTable.Rows[i][0].ToString());
             }
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void uploadPic_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png;*.gif)|*.jpg;*png;*gif";
+            if ((opf.ShowDialog() == DialogResult.OK))
+            {
+                pictureBox.Image = Image.FromFile(opf.FileName);
+            }
+        }
+
+        private void addressBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
